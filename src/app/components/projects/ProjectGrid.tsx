@@ -24,6 +24,15 @@ const PROJECTS = [
     github: 'https://github.com/ThyagoMartins0/portfolio',
     slug: 'portfolio'
   },
+  {
+    title: 'Novo Projeto',
+    description: 'Descrição do seu novo projeto aqui.',
+    image: '/projects/novo-projeto/cover.png',
+    technologies: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3'],
+    url: 'https://seu-projeto.com',
+    github: 'https://github.com/ThyagoMartins0/novo-projeto',
+    slug: 'novo-projeto'
+  },
   // Adicione mais projetos aqui
 ];
 

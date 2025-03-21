@@ -1,15 +1,15 @@
 .profile {
   width: 100%;
-  padding: 4rem 2rem;
-  background:#171717;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  margin: 2rem 0;
 }
 
 .profileContent {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  gap: 4rem;
-  align-items: center;
+  gap: 3rem;
+  align-items: flex-start;
 }
 
 .profileImageWrapper {
@@ -18,103 +18,114 @@
 }
 
 .profileImage {
+  width: 200px;
+  height: 200px;
   position: relative;
-  width: 200px;
-  height: 200px;
-  z-index: 2;
-}
-
-.imageDecoration {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(135deg, #0070f3 0%, #00d4ff 100%);
-  border-radius: 50%;
-  top: 20px;
-  left: 20px;
   z-index: 1;
 }
 
 .avatar {
-  border-radius: 50%;
+  border-radius: 12px;
   object-fit: cover;
-  border: 4px solid white;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.imageDecoration {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 12px;
+  opacity: 0.1;
 }
 
 .profileInfo {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
 .nameSection {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .nameSection h1 {
-  margin: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #FCFFFC 0%, #666 100%);
+  margin: 0;
+  background: linear-gradient(to right, var(--primary), #ff00ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 1.2;
 }
 
 .role {
-  font-size: 1.25rem;
-  color: #666;
-  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+.bioContainer {
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .bio {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #FCFFFC;
+  color: var(--secondary);
+  text-align: justify;
+  white-space: pre-line;
   margin: 0;
+}
+
+.readMoreBtn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.readMoreBtn:hover {
+  opacity: 0.8;
+}
+
+.readMoreBtn svg {
+  transition: transform 0.2s ease;
+}
+
+.readMoreBtn:hover svg {
+  transform: translateX(2px);
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .skillTag {
-  padding: 0.5rem 1rem;
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  background: var(--accent);
+  color: var(--foreground);
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
   font-size: 0.9rem;
-  color: #333;
   font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.skillTag:hover {
-  background: #0070f3;
-  color: white;
-  border-color: #0070f3;
-  transform: translateY(-2px);
 }
 
 .moreLink {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #0070f3;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-}
-
-.moreLink:hover {
-  gap: 0.75rem;
 }
 
 .moreLink svg {
@@ -133,25 +144,25 @@
   }
 
   .nameSection h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .skills {
     justify-content: center;
   }
 
-  .moreLink {
+  .moreLink, .readMoreBtn {
     justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
   .profile {
-    padding: 2rem 1rem;
+    padding: 1.5rem;
   }
 
   .nameSection h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .bio {

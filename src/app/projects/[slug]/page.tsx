@@ -69,6 +69,42 @@ const PROJECTS_DATA = {
         caption: 'Modo escuro'
       }
     ]
+  },
+  'novo-projeto': {
+    title: 'Novo Projeto',
+    description: 'Descrição do seu novo projeto aqui.',
+    fullDescription: `
+      Descrição detalhada do seu novo projeto. Esta é uma descrição mais completa que pode
+      incluir múltiplos parágrafos e explicar em detalhes o que o projeto faz.
+
+      Principais características:
+      • Característica 1
+      • Característica 2
+      • Característica 3
+      • Característica 4
+      • Característica 5
+
+      Você pode incluir mais informações sobre o processo de desenvolvimento,
+      desafios enfrentados, soluções implementadas e resultados alcançados.
+    `,
+    image: '/projects/novo-projeto/cover.png',
+    technologies: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3'],
+    liveUrl: 'https://seu-projeto.com',
+    github: 'https://github.com/ThyagoMartins0/novo-projeto',
+    screenshots: [
+      {
+        url: '/projects/novo-projeto/screen1.png',
+        caption: 'Descrição da primeira screenshot'
+      },
+      {
+        url: '/projects/novo-projeto/screen2.png',
+        caption: 'Descrição da segunda screenshot'
+      },
+      {
+        url: '/projects/novo-projeto/screen3.png',
+        caption: 'Descrição da terceira screenshot'
+      }
+    ]
   }
 };
 

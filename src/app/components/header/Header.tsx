@@ -37,7 +37,8 @@ const SOCIAL_LINKS = [
 const NAV_LINKS = [
   { name: 'About me', href: '/#about' },
   { name: 'My projects', href: '/projects' },
-  { name: 'My research', href: '/#research' }
+  { name: 'My research', href: '/research' },
+  { name: 'Gallery', href: '/gallery' }
 ]
 
 export default function Header() {

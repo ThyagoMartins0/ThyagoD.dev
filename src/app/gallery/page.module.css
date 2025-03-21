@@ -1,0 +1,133 @@
+.main {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.bioSections {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.bioSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.bioSection:nth-child(even) {
+  grid-template-columns: 2fr 1fr;
+  direction: rtl;
+}
+
+.bioSection:nth-child(even) .bioContent {
+  direction: ltr;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.bioSection:hover .image {
+  transform: scale(1.05);
+}
+
+.bioContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bioContent h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+}
+
+.bioContent p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--secondary);
+  text-align: justify;
+  margin: 0;
+}
+
+.readMoreBtn {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.readMoreBtn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .bioSection,
+  .bioSection:nth-child(even) {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 1.5rem;
+  }
+
+  .bioContent h2 {
+    font-size: 1.5rem;
+  }
+
+  .bioContent p {
+    font-size: 1rem;
+  }
+} 
