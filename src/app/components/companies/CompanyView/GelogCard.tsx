@@ -4,8 +4,8 @@ export default function GelogCard() {
   return (
     <CompanyCard
       name="Gelog"
-      logo="/companies/gelog/logo.svg"
-      backgroundColor="#003366"
+      logo="/companies/gelog/grupo_gelog_logo.jpg"
+      backgroundColor="#FF4500"
       slug="gelog"
     />
   )

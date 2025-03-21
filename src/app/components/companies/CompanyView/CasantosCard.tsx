@@ -4,8 +4,8 @@ export default function CasantosCard() {
   return (
     <CompanyCard
       name="Casantos"
-      logo="/companies/casantos/logo.svg"
-      backgroundColor="#2B0A3F"
+      logo="/companies/casantos/Bandeira_de_Santos_(São_Paulo).svg.png"
+      backgroundColor="#ffffff"
       slug="casantos"
     />
   )
