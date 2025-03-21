@@ -11,9 +11,7 @@ export default function Home() {
       <Header />
       <Profile />
       <Video />
-      <div id="projects">
-        <ProjectGrid />
-      </div>
+     
       <CompanyGrid />
     </main>
   )

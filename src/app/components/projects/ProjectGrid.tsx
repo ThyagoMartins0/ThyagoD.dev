@@ -9,10 +9,11 @@ const PROJECTS = [
   {
     title: 'PicPay Clone',
     description: 'Clone do aplicativo PicPay desenvolvido como teste técnico, implementando as principais funcionalidades do app original.',
-    image: '/projects/picpay.png',
+    image: '/projects/picpay/picpay.png',
     technologies: ['React Native', 'TypeScript', 'Node.js'],
     url: 'https://picpay.com',
-    github: 'https://github.com/ThyagoMartins0/picpay-clone'
+    github: 'https://github.com/ThyagoMartins0/picpay-clone',
+    slug: 'picpay-clone'
   },
   {
     title: 'Portfolio',
@@ -20,7 +21,8 @@ const PROJECTS = [
     image: '/projects/portfolio.png',
     technologies: ['Next.js', 'TypeScript', 'React'],
     url: 'https://thyagod.dev',
-    github: 'https://github.com/ThyagoMartins0/portfolio'
+    github: 'https://github.com/ThyagoMartins0/portfolio',
+    slug: 'portfolio'
   },
   // Adicione mais projetos aqui
 ];

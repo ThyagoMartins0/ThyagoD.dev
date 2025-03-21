@@ -11,12 +11,21 @@ interface ProjectCardProps {
   technologies: string[];
   url: string;
   github?: string;
+  slug: string;
 }
 
-export default function ProjectCard({ title, description, image, technologies, url, github }: ProjectCardProps) {
+export default function ProjectCard({ 
+  title, 
+  description, 
+  image, 
+  technologies, 
+  url, 
+  github,
+  slug 
+}: ProjectCardProps) {
   return (
     <div className={styles.card}>
-      <div className={styles.imageContainer}>
+      <Link href={`/projects/${slug}`} className={styles.imageContainer}>
         <Image 
           src={image} 
           alt={title} 
@@ -24,9 +33,11 @@ export default function ProjectCard({ title, description, image, technologies, u
           height={250} 
           className={styles.image}
         />
-      </div>
+      </Link>
       <div className={styles.content}>
-        <h3>{title}</h3>
+        <Link href={`/projects/${slug}`}>
+          <h3>{title}</h3>
+        </Link>
         <p>{description}</p>
         <div className={styles.technologies}>
           {technologies.map((tech) => (
@@ -34,8 +45,8 @@ export default function ProjectCard({ title, description, image, technologies, u
           ))}
         </div>
         <div className={styles.links}>
-          <Link href={url} target="_blank" className={styles.link}>
-            Ver Projeto
+          <Link href={`/projects/${slug}`} className={styles.link}>
+            Ver Detalhes
           </Link>
           {github && (
             <Link href={github} target="_blank" className={styles.githubLink}>

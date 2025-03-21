@@ -4,26 +4,25 @@ import Image from 'next/image';
 import styles from './TechFilter.module.css';
 
 const TECH_ICONS = [
-  {
-    name: 'React',
-    icon: '/tech/react.svg',
-  },
-  {
-    name: 'Next.js',
-    icon: '/tech/nextjs.svg',
-  },
-  {
-    name: 'Node.js',
-    icon: '/tech/nodejs.svg',
-  },
+
   {
     name: 'TypeScript',
-    icon: '/tech/typescript.svg',
+    icon: '/icons/filtro-projects/icons8-typescript.svg',
+  },
+  {
+    name: 'Java',
+    icon: '/icons/filtro-projects/icons8-java.svg',
   },
   {
     name: 'Python',
-    icon: '/tech/python.svg',
-  }
+    icon: '/icons/filtro-projects/icons8-python.svg',
+  },
+  {
+    name: 'Php',
+    icon: '/icons/filtro-projects/icons8-php-96.png',
+  },
+  
+
 ];
 
 interface TechFilterProps {
