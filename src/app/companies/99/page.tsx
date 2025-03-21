@@ -69,32 +69,7 @@ export default function MutantPage() {
         </div>
       </section>
 
-      {/* Recomendações */}
-      <section className={styles.recommendations}>
-        <div className={styles.container}>
-          <h2>Recomendações</h2>
-          <div className={styles.recommendationCard}>
-            <div className={styles.recommendationHeader}>
-              <Image
-                src="/companies/mutant/image/recomendagabriel.jpg"
-                alt="Foto do recomendante"
-                width={60}
-                height={60}
-                className={styles.recommendationImage}
-              />
-              <div>
-                <h3>Gabriel Nunes</h3>
-                <p>Arquiteto de software | Java Developer | Springboot | Postgresql | Game dev</p>
-              </div>
-            </div>
-            <blockquote>
-              &ldquo;Thyago é um desenvolvedor excepcional, sempre buscando evoluir e aprimorar suas habilidades. Ele demonstra um compromisso genuíno com a melhoria contínua, solicitando feedbacks constantes para aperfeiçoar seu trabalho e entregar sempre o melhor resultado possível.
-
-Além de sua capacidade técnica, Thyago se destaca pela proatividade e dedicação, mostrando-se sempre atento a novas formas de otimizar processos e contribuir para o sucesso da equipe. Trabalhar com ele é ter a certeza de contar com um profissional comprometido e em constante crescimento. Recomendo fortemente seu trabalho!&rdquo;
-            </blockquote>
-          </div>
-        </div>
-      </section>
+   
 
       {/* Galeria */}
       <section className={styles.gallery}>

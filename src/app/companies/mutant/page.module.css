@@ -110,12 +110,19 @@
   margin-bottom: 2rem;
 }
 
+.recommendationsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
 .recommendationCard {
   background: white;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   border: 1px solid #eaeaea;
+  height: 100%; /* Garante que todos os cards tenham a mesma altura */
 }
 
 .recommendationHeader {
@@ -406,5 +413,12 @@
 
   .recommendationCard {
     padding: 1.5rem;
+  }
+}
+
+/* Ajuste responsivo para os cards de recomendação */
+@media (max-width: 900px) {
+  .recommendationsContainer {
+    grid-template-columns: 1fr; /* Em telas menores, volta para uma coluna */
   }
 } 

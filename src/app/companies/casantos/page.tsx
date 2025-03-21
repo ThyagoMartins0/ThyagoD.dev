@@ -93,8 +93,15 @@ export default function MutantPage() {
 Além de sua capacidade técnica, Thyago se destaca pela proatividade e dedicação, mostrando-se sempre atento a novas formas de otimizar processos e contribuir para o sucesso da equipe. Trabalhar com ele é ter a certeza de contar com um profissional comprometido e em constante crescimento. Recomendo fortemente seu trabalho!&rdquo;
             </blockquote>
           </div>
+
+
+
+
+          
         </div>
       </section>
+
+      
 
       {/* Galeria */}
       <section className={styles.gallery}>
