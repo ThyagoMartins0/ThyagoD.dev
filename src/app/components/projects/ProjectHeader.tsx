@@ -21,7 +21,7 @@ export default function ProjectHeader() {
           />
         </div>
         <div className={styles.info}>
-          <h1>Thyago Ramos</h1>
+          <h1 className={styles.name}>Thyago Ramos</h1>
           <h2>Software Engineer</h2>
           <p>
             Since 2022, I&apos;ve been on a journey to make an impact in the programming field, working with prominent

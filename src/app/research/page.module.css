@@ -1,6 +1,7 @@
 .main {
   min-height: 100vh;
   background: var(--background-primary);
+  margin: 6rem 0 2rem 0;
 }
 
 .container {

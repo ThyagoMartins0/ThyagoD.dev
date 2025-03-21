@@ -10,7 +10,6 @@ export default function Home() {
       <Header />
       <Profile />
       <Video />
-      
       <CompanyGrid />
     </main>
   )

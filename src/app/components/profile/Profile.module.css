@@ -3,7 +3,16 @@
   padding: 2rem;
   background: var(--card-bg);
   border-radius: 12px;
-  margin: 2rem 0;
+  margin: 13rem 0 2rem 0;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+}
+
+[data-theme="light"] .profile {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .profileContent {
@@ -45,21 +54,20 @@
 }
 
 .nameSection {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .nameSection h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2rem;
   margin: 0;
-  background: linear-gradient(to right, var(--primary), #ff00ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
 }
 
 .role {
-  font-size: 1.2rem;
-  color: var(--secondary);
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+  display: block;
 }
 
 .bioContainer {
@@ -70,7 +78,7 @@
 .bio {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: var(--secondary);
+  color: var(--text-secondary);
   text-align: justify;
   white-space: pre-line;
   margin: 0;
@@ -111,12 +119,23 @@
 }
 
 .skillTag {
-  background: var(--accent);
-  color: var(--foreground);
+  background: var(--skills-bg);
+  color: var(--skills-text);
   padding: 0.25rem 0.75rem;
   border-radius: 16px;
   font-size: 0.9rem;
   font-weight: 500;
+  border: 1px solid var(--header-border);
+}
+
+[data-theme="light"] .skillTag {
+  background: #171717;
+  color: white;
+}
+
+[data-theme="dark"] .skillTag {
+  background: #F8F8FF;
+  color: #171717;
 }
 
 .moreLink {
