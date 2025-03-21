@@ -4,8 +4,8 @@ export default function CodernexCard() {
   return (
     <CompanyCard
       name="Codernex"
-      logo="/companies/codernex/logo.svg"
-      backgroundColor="#000000"
+      logo="/companies/codernex/image/codernex_logo.png"
+      backgroundColor="#ffffff"
       slug="codernex"
     />
   )

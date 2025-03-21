@@ -1,6 +1,9 @@
+"use client";
+
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './Header.module.css'
+import { useTheme } from '../../context/ThemeContext'
 
 const SOCIAL_LINKS = [
   {
@@ -32,6 +35,8 @@ const NAV_LINKS = [
 ]
 
 export default function Header() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
@@ -43,8 +48,12 @@ export default function Header() {
               </Link>
             ))}
           </div>
-          <button className={styles.themeToggle} aria-label="Toggle theme">
-            🌓
+          <button 
+            className={styles.themeToggle} 
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? '🌞' : '🌙'}
           </button>
         </nav>
 

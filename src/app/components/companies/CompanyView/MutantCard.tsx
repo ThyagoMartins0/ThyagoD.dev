@@ -4,7 +4,7 @@ export default function MutantCard() {
   return (
     <CompanyCard
       name="Mutant"
-      logo="/companies/mutant/logo.svg"
+      logo="/companies/mutant/image/mutantbr_logo.jpg"
       backgroundColor="#000000"
       slug="mutant"
     />

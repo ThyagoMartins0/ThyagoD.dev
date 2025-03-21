@@ -11,7 +11,7 @@ export default function Profile() {
         <div className={styles.profileImageWrapper}>
           <div className={styles.profileImage}>
             <Image 
-              src="/profile.jpg" 
+              src="/profile/imagens/fotodeperfil.jpg" 
               alt="Profile" 
               width={200} 
               height={200}
@@ -29,8 +29,7 @@ export default function Profile() {
           </div>
 
           <p className={styles.bio}>
-            Passionate about creating innovative solutions and exploring new technologies.
-            Focused on web development and cloud computing.
+          Since 2022, I’ve been on a journey to make an impact in the programming field, working with prominent technologies such as Java, Laravel, and Node.js. Along the way, I have participated in challenging projects of varying complexities, always focused on creating solutions that generate real value for people.
           </p>
 
           <div className={styles.skills}>
