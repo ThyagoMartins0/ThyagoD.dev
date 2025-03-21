@@ -156,6 +156,11 @@
 }
 
 @media (max-width: 768px) {
+  .profile {
+    margin: 12rem 0 2rem 0;
+    padding: 1.5rem;
+  }
+  
   .profileContent {
     flex-direction: column;
     text-align: center;
@@ -177,7 +182,8 @@
 
 @media (max-width: 480px) {
   .profile {
-    padding: 1.5rem;
+    margin: 15rem 0 2rem 0;
+    padding: 1rem;
   }
 
   .nameSection h1 {

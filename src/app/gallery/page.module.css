@@ -108,6 +108,14 @@
   .container {
     padding: 1rem;
   }
+  @media (max-width: 480px) {
+    .container {
+      
+      margin: 14rem 0 2rem 0;
+      padding: 1rem;
+    }
+  }
+  
 
   .container h1 {
     font-size: 2rem;
@@ -116,6 +124,7 @@
   .description {
     font-size: 1rem;
   }
+
 
   .bioSection,
   .bioSection:nth-child(even) {

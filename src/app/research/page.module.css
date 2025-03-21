@@ -1,7 +1,7 @@
 .main {
   min-height: 100vh;
   background: var(--background-primary);
-  margin: 6rem 0 2rem 0;
+  margin: 8rem 0 2rem 0;
 }
 
 .container {
@@ -151,10 +151,19 @@
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+    margin: 13rem 0 2rem 0;
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 640px) {
   .container {
     padding: 1rem;
   }
+ 
 
   .hero {
     margin: 2rem 0;
