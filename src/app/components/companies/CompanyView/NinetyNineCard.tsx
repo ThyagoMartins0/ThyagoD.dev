@@ -4,9 +4,9 @@ export default function NinetyNineCard() {
   return (
     <CompanyCard
       name="99"
-      logo="/companies/99.svg"
+      logo="/companies/99/logo.svg"
       backgroundColor="#00A1E4"
-      link="https://99app.com"
+      slug="99"
     />
   )
 } 

@@ -6,12 +6,12 @@ interface CompanyCardProps {
   name: string
   logo: string
   backgroundColor: string
-  link: string
+  slug: string
 }
 
-export default function CompanyCard({ name, logo, backgroundColor, link }: CompanyCardProps) {
+export default function CompanyCard({ name, logo, backgroundColor, slug }: CompanyCardProps) {
   return (
-    <Link href={link} className={styles.card} style={{ backgroundColor }}>
+    <div className={styles.card} style={{ backgroundColor }}>
       <div className={styles.logoContainer}>
         <Image 
           src={logo}
@@ -21,6 +21,9 @@ export default function CompanyCard({ name, logo, backgroundColor, link }: Compa
           className={styles.logo}
         />
       </div>
-    </Link>
+      <Link href={`/companies/${slug}`} className={styles.learnMore}>
+        Saiba mais
+      </Link>
+    </div>
   )
 } 

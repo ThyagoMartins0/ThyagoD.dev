@@ -1,4 +1,4 @@
-import CompanyCard from '../CompanyCard'
+import CompanyCard from './CompanyCard'
 
 export default function MutantCard() {
   return (

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './Profile.module.css'
 
-const SKILLS = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'AWS']
+const SKILLS = ['Java','Spring','Php','Laravel','React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'AWS']
 
 export default function Profile() {
   return (
