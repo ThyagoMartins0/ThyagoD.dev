@@ -24,7 +24,7 @@ export default function ProjectHeader() {
           <h1>Thyago Ramos</h1>
           <h2>Software Engineer</h2>
           <p>
-            Since 2022, I've been on a journey to make an impact in the programming field, working with prominent
+            Since 2022, I&apos;ve been on a journey to make an impact in the programming field, working with prominent
             technologies such as Java, Laravel, and Node.js. Along the way, I have participated in challenging
             projects of varying complexities, always focused on creating solutions that generate real value for
             people.
