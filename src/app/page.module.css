@@ -30,8 +30,159 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navLinks a:hover {
+  color: #0070f3;
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.themeToggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialLinks a {
+  transition: transform 0.2s;
+}
+
+.socialLinks a:hover {
+  transform: scale(1.1);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.profileImage {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileInfo {
+  text-align: center;
+}
+
+.profileInfo h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.profileInfo p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.moreLink {
+  color: #0070f3;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.video {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem 0;
+}
+
+.video h2 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.videoThumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience {
+  width: 100%;
+}
+
+.experience h2 {
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.company:hover {
+  transform: translateY(-5px);
 }
 
 .main ol {
