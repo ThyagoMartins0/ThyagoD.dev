@@ -72,7 +72,13 @@ const PROJECTS_DATA = {
   }
 };
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default function ProjectPage({ params }: PageProps) {
   const project = PROJECTS_DATA[params.slug as keyof typeof PROJECTS_DATA];
 
   if (!project) {
