@@ -9,7 +9,6 @@ interface ProjectCardProps {
   description: string;
   image: string;
   technologies: string[];
-  url: string;
   github?: string;
   slug: string;
 }
@@ -19,7 +18,6 @@ export default function ProjectCard({
   description, 
   image, 
   technologies, 
-  url, 
   github,
   slug 
 }: ProjectCardProps) {
