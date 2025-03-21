@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.techButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--background-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.techButton:hover {
+  transform: translateY(-2px);
+  background: var(--background-tertiary);
+}
+
+.techButton.active {
+  background: var(--accent);
+  color: white;
+}
+
+.techName {
+  display: none;
+}
+
+.techButton:hover .techName {
+  display: inline;
+} 

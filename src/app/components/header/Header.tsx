@@ -8,30 +8,36 @@ import { useTheme } from '../../context/ThemeContext'
 const SOCIAL_LINKS = [
   {
     name: 'GitHub',
-    icon: '/icons/github.svg',
-    url: 'https://github.com/ThyagoD'
+    icon: '/profile/imagens/icons8-github-512.png',
+    url: 'https://github.com/ThyagoMartins0'
   },
   {
     name: 'LinkedIn',
-    icon: '/icons/linkedin.svg',
-    url: 'https://linkedin.com/in/thyagodias'
-  },
-  {
-    name: 'Google Scholar',
-    icon: '/icons/google-scholar.svg',
-    url: 'https://scholar.google.com'
+    icon: '/profile/imagens/icons8-linkedin-480.png',
+    url: 'https://www.linkedin.com/in/thyagomartins/'
   },
   {
     name: 'Instagram',
-    icon: '/icons/instagram.svg',
-    url: 'https://instagram.com'
+    icon: '/profile/imagens/icons8-instagram.svg',
+    url: 'https://www.instagram.com/othyago.diniz/'
+  },
+
+  {
+    name: 'hackerrank',
+    icon: '/profile/imagens/icons8-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-96.png',
+    url: 'https://www.hackerrank.com/profile/ThyagoMartins'
+  },
+  {
+    name: 'Medium',
+    icon: '/profile/imagens/icons8-medium (2).svg',
+    url: 'https://medium.com/@ThyagoMartins'
   }
 ]
 
 const NAV_LINKS = [
-  { name: 'About me', href: '#about' },
-  { name: 'My projects', href: '#projects' },
-  { name: 'My research', href: '#research' }
+  { name: 'About me', href: '/#about' },
+  { name: 'My projects', href: '/projects' },
+  { name: 'My research', href: '/#research' }
 ]
 
 export default function Header() {
@@ -66,7 +72,7 @@ export default function Header() {
               rel="noopener noreferrer"
               aria-label={link.name}
             >
-              <Image src={link.icon} alt={link.name} width={24} height={24} />
+              <Image src={link.icon} alt={link.name} width={55} height={55} />
             </Link>
           ))}
         </div>
