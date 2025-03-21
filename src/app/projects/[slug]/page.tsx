@@ -76,9 +76,10 @@ interface PageProps {
   params: {
     slug: string;
   };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
-export default function ProjectPage({ params }: PageProps) {
+export default async function ProjectPage({ params, searchParams }: PageProps) {
   const project = PROJECTS_DATA[params.slug as keyof typeof PROJECTS_DATA];
 
   if (!project) {
