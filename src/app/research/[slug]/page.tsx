@@ -247,18 +247,18 @@ const RESEARCH_DETAILS: Record<string, ResearchPost> = {
 };
 
 type PageProps = {
-  params: Promise<{
+  params: {
     slug: string;
-  }>;
+  };
 };
 
-export default async function ResearchPage({ params }: PageProps) {
-  const { slug } = await params;
-  const post = RESEARCH_DETAILS[slug as keyof typeof RESEARCH_DETAILS];
-
-  if (!post) {
-    return <div>Post não encontrado</div>;
-  }
+  export default async function ResearchPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = RESEARCH_DETAILS[slug as keyof typeof RESEARCH_DETAILS];
+  
+    if (!post) {
+      return <div>Projeto não encontrado</div>;
+    }
 
   return (
     <main className={styles.main}>
@@ -276,11 +276,13 @@ export default async function ResearchPage({ params }: PageProps) {
 
         <div className={styles.content}>
           <div className={styles.meta}>
-            <time>{new Date(post.date).toLocaleDateString('pt-BR', {
-              day: '2-digit',
-              month: 'long',
-              year: 'numeric'
-            })}</time>
+            <time>
+              {new Date(post.date).toLocaleDateString('pt-BR', {
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric'
+              })}
+            </time>
             <span>•</span>
             <span>{post.readTime} de leitura</span>
           </div>
@@ -365,10 +367,10 @@ export default async function ResearchPage({ params }: PageProps) {
                   : line.includes('```') ? '</code></pre>' : line;
               }
               return line ? `<p>${line.trim()}</p>` : '';
-            }).join('')}}
+            }).join('') }}
           />
         </div>
       </article>
     </main>
   );
-} 
+}
