@@ -26,13 +26,12 @@ export type Translation = {
   profile: {
     role: string;
     bio: {
-      short: string;
-      long: string;
-      readMore: string;
-      readLess: string;
+      title: string;
+      description: string;
     };
     skills: {
       title: string;
+      description: string;
     };
   };
   video: {
@@ -44,6 +43,9 @@ export type Translation = {
     description: string;
     learnMore: string;
     mutant: {
+      title: string;
+      description: string;
+      learnMore: string;
       slogan: string;
       about: {
         title: string;
@@ -75,24 +77,24 @@ export type Translation = {
           description: string;
           period: string;
           role: string;
-          responsibilities: string[];
-          highlights: string[];
+          responsibilities: readonly string[];
+          highlights: readonly string[];
         };
         biometric: {
           title: string;
           description: string;
           period: string;
           role: string;
-          responsibilities: string[];
-          highlights: string[];
+          responsibilities: readonly string[];
+          highlights: readonly string[];
         };
         morada: {
           title: string;
           description: string;
           period: string;
           role: string;
-          responsibilities: string[];
-          highlights: string[];
+          responsibilities: readonly string[];
+          highlights: readonly string[];
         };
       };
       gallery: {
@@ -108,23 +110,7 @@ export type Translation = {
   gallery: {
     title: string;
     description: string;
-    sections: {
-      education: {
-        title: string;
-        text: string;
-        alt: string;
-      };
-      professional: {
-        title: string;
-        text: string;
-        alt: string;
-      };
-      personal: {
-        title: string;
-        text: string;
-        alt: string;
-      };
-    };
+    viewMore: string;
   };
   research: {
     title: string;
@@ -132,7 +118,6 @@ export type Translation = {
     readTime: string;
     readMore: string;
   };
-  scrollToTop: string;
   languageSelector: string;
 };
 
