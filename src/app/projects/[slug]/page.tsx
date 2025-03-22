@@ -107,13 +107,14 @@ Este projeto demonstra não apenas o domínio técnico em Java e Spring, mas tam
   }
 };
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const { slug } = await Promise.resolve(params);
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const project = PROJECTS_DATA[slug as keyof typeof PROJECTS_DATA];
 
   if (!project) {
     return <div>Projeto não encontrado</div>;
   }
+  
   return (
     <main className={styles.main}>
       <Header />
