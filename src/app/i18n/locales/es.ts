@@ -129,12 +129,16 @@ export const es: Translation = {
       }
     }
   },
+  gallery: {
+    title: 'Galería',
+    description: 'Conoce más sobre mí a través de fotos y videos.',
+    viewMore: 'Ver más'
+  },
   research: {
     title: 'Investigación',
     description: 'Artículos e investigaciones sobre desarrollo de software.',
     readTime: 'min',
     readMore: 'Leer más',
   },
-  scrollToTop: 'Volver arriba',
-  languageSelector: 'Seleccionar idioma',
-} as const; 
+  languageSelector: 'Seleccionar idioma'
+}; 
