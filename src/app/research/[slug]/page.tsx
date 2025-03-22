@@ -246,14 +246,15 @@ const RESEARCH_DETAILS: Record<string, ResearchPost> = {
   }
 };
 
-interface PageProps {
-  params: {
+type PageProps = {
+  params: Promise<{
     slug: string;
-  };
-}
+  }>;
+};
 
-export default function ResearchPostPage({ params }: PageProps) {
-  const post = RESEARCH_DETAILS[params.slug as keyof typeof RESEARCH_DETAILS];
+export default async function ResearchPage({ params }: PageProps) {
+  const { slug } = await params;
+  const post = RESEARCH_DETAILS[slug as keyof typeof RESEARCH_DETAILS];
 
   if (!post) {
     return <div>Post não encontrado</div>;
