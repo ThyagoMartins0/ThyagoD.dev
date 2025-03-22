@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import Image from 'next/image';
 import Header from '../../components/header/Header';
 import styles from './page.module.css';
@@ -21,8 +20,6 @@ Desenvolvimento de testes de integração para garantir o funcionamento correto 
 Utilização de um banco de dados em memória H2 para facilitar o teste de integração e simular o comportamento real do sistema.
 
 Este projeto demonstra não apenas o domínio técnico em Java e Spring, mas também o compromisso com a qualidade de código e a aplicação de boas práticas no ciclo de desenvolvimento. 🚀
-
-    
     `,
     image: '/projects/picpay/picpay.png',
     technologies: ['Java', 'Spring', 'H2 sql ', 'Junit', 'Jetbrains IDE '],
@@ -110,15 +107,8 @@ Este projeto demonstra não apenas o domínio técnico em Java e Spring, mas tam
   }
 };
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
-
-export default async function ProjectPage({ params, searchParams }: PageProps) {
-  const project = PROJECTS_DATA[params.slug as keyof typeof PROJECTS_DATA];
+export default function ProjectPage({ params }: { params: { slug: string } }) {
+  const project = PROJECTS_DATA[params.slug];
 
   if (!project) {
     return <div>Projeto não encontrado</div>;
