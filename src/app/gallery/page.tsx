@@ -1,36 +1,41 @@
+'use client';
+
 import Image from 'next/image';
 import Header from '../components/header/Header';
 import styles from './page.module.css';
-
-const BIOGRAPHY_SECTIONS = [
-  {
-    image: '/galeria/MAR_8998.jpg',
-    alt: 'Thyago sorrindo',
-    title: 'Formação Acadêmica',
-    text: 'Graduado em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento web e mobile. Sempre buscando aprender novas tecnologias e metodologias para criar soluções inovadoras.'
-  },
-  {
-    image: '/galeria/FOTOPERFILPROFISSIONAL.jpg',
-    alt: 'Thyago com roupa azul',
-    title: 'Experiência Profissional',
-    text: 'Desenvolvedor Full Stack com experiência em React, Next.js, Node.js e TypeScript. Trabalhei em diversos projetos desafiadores, contribuindo para o desenvolvimento de soluções escaláveis e de alta performance.'
-  },
-  {
-    image: '/profile/imagens/thyago3.jpg',
-    alt: 'Thyago correndo',
-    title: 'Vida Pessoal & Hobbies',
-    text: 'Além da programação, sou apaixonado por esportes e atividades físicas. Acredito que um corpo são mantém a mente sã, e isso reflete diretamente na qualidade do meu trabalho e na minha criatividade.'
-  }
-];
+import { useLanguage } from '@/app/i18n/LanguageContext';
 
 export default function GalleryPage() {
+  const { t } = useLanguage();
+
+  const BIOGRAPHY_SECTIONS = [
+    {
+      image: '/galeria/MAR_8998.jpg',
+      alt: t.gallery.sections.education.alt,
+      title: t.gallery.sections.education.title,
+      text: t.gallery.sections.education.text
+    },
+    {
+      image: '/galeria/FOTOPERFILPROFISSIONAL.jpg',
+      alt: t.gallery.sections.professional.alt,
+      title: t.gallery.sections.professional.title,
+      text: t.gallery.sections.professional.text
+    },
+    {
+      image: '/profile/imagens/thyago3.jpg',
+      alt: t.gallery.sections.personal.alt,
+      title: t.gallery.sections.personal.title,
+      text: t.gallery.sections.personal.text
+    }
+  ];
+
   return (
     <main className={styles.main}>
       <Header />
       <div className={styles.container}>
-        <h1>Minha História</h1>
+        <h1>{t.gallery.title}</h1>
         <p className={styles.description}>
-          Conheça um pouco mais sobre minha jornada pessoal e profissional
+          {t.gallery.description}
         </p>
         
         <div className={styles.bioSections}>

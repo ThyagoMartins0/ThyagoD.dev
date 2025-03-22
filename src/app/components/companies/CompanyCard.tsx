@@ -1,6 +1,9 @@
+'use client';
+
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './CompanyCard.module.css'
+import { useLanguage } from '@/app/i18n/LanguageContext'
 
 interface CompanyCardProps {
   name: string
@@ -10,6 +13,8 @@ interface CompanyCardProps {
 }
 
 export default function CompanyCard({ name, logo, backgroundColor, slug }: CompanyCardProps) {
+  const { t } = useLanguage();
+
   return (
     <div className={styles.card} style={{ backgroundColor }}>
       <div className={styles.logoContainer}>
@@ -22,7 +27,7 @@ export default function CompanyCard({ name, logo, backgroundColor, slug }: Compa
         />
       </div>
       <Link href={`/companies/${slug}`} className={styles.learnMore}>
-        Saiba mais
+        {t.companies.learnMore}
       </Link>
     </div>
   )

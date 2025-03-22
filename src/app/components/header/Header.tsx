@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './Header.module.css'
 import { useTheme } from '../../context/ThemeContext'
+import { useLanguage } from '../../i18n/LanguageContext'
 
 const SOCIAL_LINKS = [
   {
@@ -34,15 +35,16 @@ const SOCIAL_LINKS = [
   }
 ]
 
-const NAV_LINKS = [
-  { name: 'About me', href: '/#about' },
-  { name: 'My projects', href: '/projects' },
-  { name: 'My research', href: '/research' },
-  { name: 'Gallery', href: '/gallery' }
-]
-
 export default function Header() {
   const { theme, toggleTheme } = useTheme();
+  const { t } = useLanguage();
+
+  const NAV_LINKS = [
+    { name: t.header.about, href: '/#about' },
+    { name: t.header.projects, href: '/projects' },
+    { name: t.header.research, href: '/research' },
+    { name: t.header.gallery, href: '/gallery' }
+  ]
 
   return (
     <header className={styles.header}>

@@ -77,7 +77,7 @@ export default function ResearchPage() {
                   ))}
                 </div>
                 <Link href={`/research/${post.slug}`} className={styles.readMore}>
-                  Ver mais
+                  Ler mais
                   <svg 
                     width="20" 
                     height="20" 
