@@ -1,88 +1,57 @@
+'use client';
+
 import Image from 'next/image'
 import styles from './page.module.css'
+import { useLanguage } from '@/app/i18n/LanguageContext';
 
 const GALLERY_IMAGES = [
   {
     src: '/companies/mutant/image/fotodemateriais.jpg',
-    alt: 'Espaço de trabalho'
+    alt: 'workspace'
   },
   {
     src: '/companies/mutant/gallery/team.jpg',
-    alt: 'Time da empresa'
+    alt: 'team'
   },
   {
     src: '/companies/mutant/gallery/event.jpg',
-    alt: 'Evento da empresa'
-  }
-]
-
-const PROJECTS = [
-  {
-    title: "Projeto Integração de Pagamentos",
-    description: "Desenvolvimento de uma API robusta para integração com múltiplos gateways de pagamento, permitindo processamento de transações em tempo real e gestão de cobranças recorrentes. O sistema foi projetado para lidar com alto volume de transações, garantindo consistência e rastreabilidade em todas as operações.",
-    period: "Mar 2024 - Presente",
-    technologies: ["Java 17", "Spring Boot 3", "Spring Cloud", "PostgreSQL", "RabbitMQ", "Docker", "Kubernetes", "JUnit", "Mockito"],
-    role: "Backend Developer",
-    responsibilities: [
-      "Desenvolvimento de APIs RESTful seguindo padrões de mercado",
-      "Implementação de padrões de design e arquitetura limpa",
-      "Integração com sistemas externos e gateways de pagamento",
-      "Documentação técnica e de API usando Swagger",
-      "Code review e mentoria de desenvolvedores júnior"
-    ],
-    highlights: [
-      "Implementação de sistema de retry para transações falhas com dead letter queue",
-      "Desenvolvimento de webhooks para notificações em tempo real com garantia de entrega",
-      "Criação de testes automatizados com cobertura superior a 80%",
-      "Implementação de circuit breaker para integrações externas",
-      "Otimização de performance resultando em redução de 40% no tempo de resposta"
-    ]
-  },
-  {
-    title: "Sistema de Gestão de Pedidos",
-    description: "Criação de um sistema completo para gerenciamento de pedidos, incluindo tracking em tempo real e integração com sistemas de logística. A plataforma permite o acompanhamento em tempo real do status dos pedidos, gestão de estoque e análise de métricas de entrega.",
-    period: "Jan 2024 - Mar 2024",
-    technologies: ["Node.js", "TypeScript", "NestJS", "MongoDB", "Redis", "AWS", "Docker", "Jest", "Socket.IO"],
-    role: "Fullstack Developer",
-    responsibilities: [
-      "Desenvolvimento full-stack da aplicação",
-      "Modelagem de banco de dados e cache",
-      "Implementação de websockets para atualizações em tempo real",
-      "Deploy e configuração de infraestrutura na AWS",
-      "Desenvolvimento de interfaces responsivas"
-    ],
-    highlights: [
-      "Dashboard em tempo real com Socket.IO para atualizações instantâneas",
-      "Sistema de cache com Redis reduzindo carga no banco de dados em 60%",
-      "Integração com múltiplas APIs de rastreamento",
-      "Implementação de sistema de notificações push",
-      "Desenvolvimento de relatórios automatizados"
-    ]
-  },
-  {
-    title: "Portal de Análise de Dados",
-    description: "Desenvolvimento de uma plataforma para visualização e análise de dados de vendas e métricas de negócio. O portal oferece insights em tempo real sobre o desempenho das vendas, comportamento dos clientes e tendências de mercado.",
-    period: "Dez 2023 - Jan 2024",
-    technologies: ["React", "Next.js", "TypeScript", "GraphQL", "Python", "Pandas", "D3.js", "Material-UI", "Jest"],
-    role: "Frontend Developer",
-    responsibilities: [
-      "Desenvolvimento de interfaces interativas e responsivas",
-      "Implementação de gráficos e visualizações de dados",
-      "Otimização de performance e SEO",
-      "Desenvolvimento de componentes reutilizáveis",
-      "Testes unitários e de integração"
-    ],
-    highlights: [
-      "Gráficos interativos com D3.js e animações suaves",
-      "Exportação de relatórios em múltiplos formatos (PDF, Excel, CSV)",
-      "Interface responsiva e acessível seguindo WCAG 2.1",
-      "Implementação de filtros avançados e busca em tempo real",
-      "Otimização de performance com score 98 no Lighthouse"
-    ]
+    alt: 'event'
   }
 ]
 
 export default function MutantPage() {
+  const { t } = useLanguage();
+
+  const PROJECTS = [
+    {
+      title: t.companies.mutant.projects.myRequests.title,
+      description: t.companies.mutant.projects.myRequests.description,
+      period: t.companies.mutant.projects.myRequests.period,
+      technologies: ["Java 17", "Spring Boot 3", "Sonar", "PostgreSQL", "kafka",  "Microservices", "JUnit", "Mockito", "Azure Devops","MongoDB","Postman"],
+      role: t.companies.mutant.projects.myRequests.role,
+      responsibilities: t.companies.mutant.projects.myRequests.responsibilities,
+      highlights: t.companies.mutant.projects.myRequests.highlights
+    },
+    {
+      title: t.companies.mutant.projects.biometric.title,
+      description: t.companies.mutant.projects.biometric.description,
+      period: t.companies.mutant.projects.biometric.period,
+      technologies: ["Node.js", "TypeScript", "NestJS", "MongoDB", "Redis", "AWS", "Docker", "Jest", "Socket.IO"],
+      role: t.companies.mutant.projects.biometric.role,
+      responsibilities: t.companies.mutant.projects.biometric.responsibilities,
+      highlights: t.companies.mutant.projects.biometric.highlights
+    },
+    {
+      title: t.companies.mutant.projects.morada.title,
+      description: t.companies.mutant.projects.morada.description,
+      period: t.companies.mutant.projects.morada.period,
+      technologies: ["React", "Next.js", "TypeScript", "Jest", "BFF", "JUnit", "Mockito"],
+      role: t.companies.mutant.projects.morada.role,
+      responsibilities: t.companies.mutant.projects.morada.responsibilities,
+      highlights: t.companies.mutant.projects.morada.highlights
+    }
+  ];
+
   return (
     <main className={styles.main}>
       {/* Banner */}
@@ -104,7 +73,7 @@ export default function MutantPage() {
                 height={80}
               />
             </div>
-            <h1>NEVER SETTLE.</h1>
+            <h1>{t.companies.mutant.slogan}</h1>
           </div>
         </div>
       </section>
@@ -112,23 +81,19 @@ export default function MutantPage() {
       {/* Descrição */}
       <section className={styles.description}>
         <div className={styles.container}>
-          <h2>Sobre a Empresa</h2>
-          <p>
-            A Mutant é uma empresa inovadora focada em desenvolvimento de software
-            e soluções tecnológicas. Com uma cultura única e um ambiente dinâmico,
-            buscamos constantemente novos desafios e oportunidades de crescimento.
-          </p>
+          <h2>{t.companies.mutant.about.title}</h2>
+          <p>{t.companies.mutant.about.description}</p>
           <div className={styles.details}>
             <div className={styles.detailItem}>
-              <h3>Cargo</h3>
+              <h3>{t.companies.mutant.about.role}</h3>
               <p>Software Engineer</p>
             </div>
             <div className={styles.detailItem}>
-              <h3>Período</h3>
+              <h3>{t.companies.mutant.about.period}</h3>
               <p>2024 - Atual</p>
             </div>
             <div className={styles.detailItem}>
-              <h3>Localização</h3>
+              <h3>{t.companies.mutant.about.location}</h3>
               <p>São Paulo, SP - (Home Office)</p>
             </div>
           </div>
@@ -138,7 +103,7 @@ export default function MutantPage() {
       {/* Recomendações */}
       <section className={styles.recommendations}>
         <div className={styles.container}>
-          <h2>Recomendações</h2>
+          <h2>{t.companies.mutant.recommendations.title}</h2>
           <div className={styles.recommendationsContainer}>
             <div className={styles.recommendationCard}>
               <div className={styles.recommendationHeader}>
@@ -150,14 +115,12 @@ export default function MutantPage() {
                   className={styles.recommendationImage}
                 />
                 <div>
-                  <h3>Gabriel Nunes</h3>
-                  <p>Arquiteto de software | Java Developer | Springboot | Postgresql | Game dev</p>
+                  <h3>{t.companies.mutant.recommendations.gabriel.name}</h3>
+                  <p>{t.companies.mutant.recommendations.gabriel.role}</p>
                 </div>
               </div>
               <blockquote>
-                &ldquo;Thyago é um desenvolvedor excepcional, sempre buscando evoluir e aprimorar suas habilidades. Ele demonstra um compromisso genuíno com a melhoria contínua, solicitando feedbacks constantes para aperfeiçoar seu trabalho e entregar sempre o melhor resultado possível.
-
-Além de sua capacidade técnica, Thyago se destaca pela proatividade e dedicação, mostrando-se sempre atento a novas formas de otimizar processos e contribuir para o sucesso da equipe. Trabalhar com ele é ter a certeza de contar com um profissional comprometido e em constante crescimento. Recomendo fortemente seu trabalho!&rdquo;
+                {t.companies.mutant.recommendations.gabriel.text}
               </blockquote>
             </div>
 
@@ -171,19 +134,14 @@ Além de sua capacidade técnica, Thyago se destaca pela proatividade e dedicaç
                   className={styles.recommendationImage}
                 />
                 <div>
-                  <h3>Daniel Nogueira</h3>
-                  <p>Software Developer at @Mutant | TypeScript | React | Node | Testes
-                  </p>
+                  <h3>{t.companies.mutant.recommendations.daniel.name}</h3>
+                  <p>{t.companies.mutant.recommendations.daniel.role}</p>
                 </div>
               </div>
               <blockquote>
-                &ldquo;Tive o prazer de trabalhar com o Thyago em projetos desafiadores e sua capacidade técnica é impressionante. Ele não apenas domina as tecnologias necessárias, mas também tem uma excelente visão de arquitetura e sempre busca as melhores práticas de desenvolvimento.
-
-O que mais me impressiona é sua habilidade de colaboração e comunicação clara com a equipe. Thyago é um profissional que realmente faz a diferença em qualquer projeto que participa.&rdquo;
+                {t.companies.mutant.recommendations.daniel.text}
               </blockquote>
             </div>
-
-          
           </div>
         </div>
       </section>
@@ -191,7 +149,7 @@ O que mais me impressiona é sua habilidade de colaboração e comunicação cla
       {/* Projetos */}
       <section className={styles.projects}>
         <div className={styles.container}>
-          <h2>Projetos</h2>
+          <h2>{t.companies.mutant.projects.title}</h2>
           <div className={styles.projectsGrid}>
             {PROJECTS.map((project, index) => (
               <div key={index} className={styles.projectCard}>
@@ -208,7 +166,7 @@ O que mais me impressiona é sua habilidade de colaboração e comunicação cla
                 <div className={styles.projectContent}>
                   <div className={styles.projectMain}>
                     <div className={styles.responsibilities}>
-                      <h4>Responsabilidades</h4>
+                      <h4>{t.companies.mutant.projects.responsibilities}</h4>
                       <ul>
                         {project.responsibilities.map((responsibility, i) => (
                           <li key={i}>{responsibility}</li>
@@ -217,7 +175,7 @@ O que mais me impressiona é sua habilidade de colaboração e comunicação cla
                     </div>
 
                     <div className={styles.highlights}>
-                      <h4>Destaques</h4>
+                      <h4>{t.companies.mutant.projects.highlights}</h4>
                       <ul>
                         {project.highlights.map((highlight, i) => (
                           <li key={i}>{highlight}</li>
@@ -228,7 +186,7 @@ O que mais me impressiona é sua habilidade de colaboração e comunicação cla
 
                   <div className={styles.projectSidebar}>
                     <div className={styles.technologies}>
-                      <h4>Tecnologias</h4>
+                      <h4>{t.companies.mutant.projects.technologies}</h4>
                       <div className={styles.techTags}>
                         {project.technologies.map((tech, i) => (
                           <span key={i} className={styles.techTag}>{tech}</span>
@@ -246,13 +204,13 @@ O que mais me impressiona é sua habilidade de colaboração e comunicação cla
       {/* Galeria */}
       <section className={styles.gallery}>
         <div className={styles.container}>
-          <h2>Galeria</h2>
+          <h2>{t.companies.mutant.gallery.title}</h2>
           <div className={styles.galleryGrid}>
             {GALLERY_IMAGES.map((image, index) => (
               <div key={index} className={styles.galleryItem}>
                 <Image
                   src={image.src}
-                  alt={image.alt}
+                  alt={t.companies.mutant.gallery.images[image.alt as keyof typeof t.companies.mutant.gallery.images]}
                   width={400}
                   height={300}
                   className={styles.galleryImage}
@@ -276,5 +234,5 @@ O que mais me impressiona é sua habilidade de colaboração e comunicação cla
         </div>
       </section>
     </main>
-  )
+  );
 } 

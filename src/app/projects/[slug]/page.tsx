@@ -5,35 +5,36 @@ import styles from './page.module.css';
 // Dados dos projetos (depois podemos mover para um arquivo separado)
 const PROJECTS_DATA = {
   'picpay-clone': {
-    title: 'PicPay Clone',
-    description: 'Clone do aplicativo PicPay desenvolvido como teste técnico, implementando as principais funcionalidades do app original.',
+    title: 'Teste técnico Pic Pay',
+    description: 'Teste técnico do pic pay com a missão de criar uma api gateway de pagamento',
     fullDescription: `
-      O PicPay Clone é uma recriação do famoso aplicativo de pagamentos brasileiro, desenvolvido como parte de um teste técnico. 
-      Este projeto demonstra minhas habilidades em desenvolvimento mobile e web, além de boas práticas de programação.
+      Este projeto foi desenvolvido como parte de um desafio técnico proposto pelo PicPay, com a missão de criar uma API Gateway de pagamento. O desafio foi de nível júnior, focado em backend, utilizando Java e Spring.
 
-      Principais funcionalidades implementadas:
-      • Sistema de login e cadastro de usuários
-      • Carteira digital com saldo e histórico de transações
-      • Envio e recebimento de pagamentos
-      • QR Code para pagamentos
-      • Feed de atividades dos contatos
+Durante o desenvolvimento, foram aplicados conceitos modernos de desenvolvimento de software e seguidas boas práticas de programação para garantir um código eficiente, organizado e escalável.
+
+Principais Implementações:
+Criação de testes unitários para validar o comportamento das classes individualmente.
+
+Desenvolvimento de testes de integração para garantir o funcionamento correto do sistema com o banco de dados.
+
+Utilização de um banco de dados em memória H2 para facilitar o teste de integração e simular o comportamento real do sistema.
+
+Este projeto demonstra não apenas o domínio técnico em Java e Spring, mas também o compromisso com a qualidade de código e a aplicação de boas práticas no ciclo de desenvolvimento. 🚀
+
+    
     `,
     image: '/projects/picpay/picpay.png',
-    technologies: ['React Native', 'TypeScript', 'Node.js', 'Express', 'MongoDB'],
-    liveUrl: 'https://picpay.com',
-    github: 'https://github.com/ThyagoMartins0/picpay-clone',
+    technologies: ['Java', 'Spring', 'H2 sql ', 'Junit', 'Jetbrains IDE '],
+    liveUrl: 'https://github.com/ThyagoMartins0/API_PAGAMENTO_PICPAY',
+    github: 'https://github.com/ThyagoMartins0/API_PAGAMENTO_PICPAY',
     screenshots: [
       {
-        url: '/projects/picpay/screen1.png',
+        url: '/projects/picpay/projetoimg/Screenshot_1.png',
         caption: 'Tela inicial do app'
       },
       {
-        url: '/projects/picpay/screen2.png',
+        url: '/projects/picpay/projetoimg/Screenshot_2.png',
         caption: 'Processo de pagamento'
-      },
-      {
-        url: '/projects/picpay/screen3.png',
-        caption: 'Feed de atividades'
       }
     ]
   },

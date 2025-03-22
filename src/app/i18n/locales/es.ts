@@ -24,28 +24,112 @@ export const es = {
   companies: {
     title: 'Empresas',
     description: 'Conoce algunas de las empresas con las que he trabajado.',
-    learnMore: 'Saber más'
-  },
-  gallery: {
-    title: 'Mi Historia',
-    description: 'Conoce más sobre mi trayectoria personal y profesional',
-    sections: {
-      education: {
-        title: 'Formación Académica',
-        text: 'Graduado en Análisis y Desarrollo de Sistemas, con enfoque en desarrollo web y móvil. Siempre buscando aprender nuevas tecnologías y metodologías para crear soluciones innovadoras.',
-        alt: 'Thyago sonriendo'
+    learnMore: 'Saber más',
+    mutant: {
+      slogan: 'NEVER SETTLE.',
+      about: {
+        title: 'Sobre la Empresa',
+        description: 'Mutant es una empresa innovadora enfocada en el desarrollo de software y soluciones tecnológicas. Con una cultura única y un ambiente dinámico, buscamos constantemente nuevos desafíos y oportunidades de crecimiento.',
+        role: 'Cargo',
+        period: 'Período',
+        location: 'Ubicación'
       },
-      professional: {
-        title: 'Experiencia Profesional',
-        text: 'Desarrollador Full Stack con experiencia en React, Next.js, Node.js y TypeScript. He trabajado en varios proyectos desafiantes, contribuyendo al desarrollo de soluciones escalables y de alto rendimiento.',
-        alt: 'Thyago con ropa azul'
+      recommendations: {
+        title: 'Recomendaciones',
+        gabriel: {
+          name: 'Gabriel Nunes',
+          role: 'Arquitecto de Software | Desarrollador Java | Springboot | Postgresql | Game dev',
+          text: 'Thyago es un desarrollador excepcional, siempre buscando evolucionar y mejorar sus habilidades. Demuestra un compromiso genuino con la mejora continua, solicitando constantemente retroalimentación para perfeccionar su trabajo y entregar siempre el mejor resultado posible.\n\nAdemás de su capacidad técnica, Thyago destaca por su proactividad y dedicación, mostrándose siempre atento a nuevas formas de optimizar procesos y contribuir al éxito del equipo. Trabajar con él es tener la certeza de contar con un profesional comprometido y en constante crecimiento. ¡Recomiendo encarecidamente su trabajo!'
+        },
+        daniel: {
+          name: 'Daniel Nogueira',
+          role: 'Desarrollador de Software en @Mutant | TypeScript | React | Node | Pruebas',
+          text: 'Tuve el placer de trabajar con Thyago en proyectos desafiantes y su capacidad técnica es impresionante. No solo domina las tecnologías necesarias, sino que también tiene una excelente visión arquitectónica y siempre busca las mejores prácticas de desarrollo.\n\nLo que más me impresiona es su capacidad de colaboración y comunicación clara con el equipo. Thyago es un profesional que realmente marca la diferencia en cualquier proyecto en el que participa.'
+        }
       },
-      personal: {
-        title: 'Vida Personal y Pasatiempos',
-        text: 'Más allá de la programación, soy un apasionado de los deportes y las actividades físicas. Creo que un cuerpo sano mantiene la mente sana, y esto se refleja directamente en la calidad de mi trabajo y en mi creatividad.',
-        alt: 'Thyago corriendo'
+      projects: {
+        title: 'Proyectos',
+        responsibilities: 'Responsabilidades',
+        highlights: 'Destacados',
+        technologies: 'Tecnologías',
+        myRequests: {
+          title: 'Mis Solicitudes (Asignado en: VIVO TELEFONICA)',
+          description: 'Desarrollo de una API robusta para integración con múltiples pasarelas de pago, permitiendo el procesamiento de transacciones en tiempo real y la gestión de facturación recurrente. El sistema fue diseñado para manejar alto volumen de transacciones, garantizando consistencia y trazabilidad en todas las operaciones.',
+          period: 'Agosto 2024 - Octubre 2024  /  Diciembre 2024 - Febrero 2025',
+          role: 'Desarrollador Backend',
+          responsibilities: [
+            'Desarrollo de APIs RESTful siguiendo estándares del mercado',
+            'Implementación de patrones de diseño y arquitectura limpia',
+            'Integración con sistemas externos y pasarelas de pago',
+            'Documentación técnica y de API usando Swagger',
+            'Revisión de código',
+            'Mentoría de desarrolladores junior',
+            'Desarrollo de pruebas automatizadas con cobertura superior al 90%'
+          ],
+          highlights: [
+            'Implementación de sistema de reintentos para transacciones fallidas con cola de letras muertas',
+            'Desarrollo de webhooks para notificaciones en tiempo real con garantía de entrega',
+            'Creación de pruebas automatizadas con cobertura superior al 80%',
+            'Implementación de circuit breaker para integraciones externas',
+            'Optimización de rendimiento resultando en reducción del 40% en tiempo de respuesta'
+          ]
+        },
+        biometric: {
+          title: 'Proyecto Biometría (Asignado en: VIVO TELEFONICA)',
+          description: 'Creación de un sistema completo para gestión de pedidos, incluyendo seguimiento en tiempo real e integración con sistemas de logística. La plataforma permite el monitoreo en tiempo real del estado de los pedidos, gestión de inventario y análisis de métricas de entrega.',
+          period: 'Octubre 2024 - Diciembre 2024',
+          role: 'Desarrollador Fullstack',
+          responsibilities: [
+            'Desarrollo full-stack de la aplicación',
+            'Modelado de base de datos y caché',
+            'Implementación de websockets para actualizaciones en tiempo real',
+            'Despliegue y configuración de infraestructura en AWS',
+            'Desarrollo de interfaces responsivas'
+          ],
+          highlights: [
+            'Panel en tiempo real con Socket.IO para actualizaciones instantáneas',
+            'Sistema de caché con Redis reduciendo carga en la base de datos en 60%',
+            'Integración con múltiples APIs de seguimiento',
+            'Implementación de sistema de notificaciones push',
+            'Desarrollo de informes automatizados'
+          ]
+        },
+        morada: {
+          title: 'Proyecto Morada (Asignado en: VIVO TELEFONICA)',
+          description: 'Desarrollo de una plataforma para visualización y análisis de datos de ventas y métricas de negocio. El portal ofrece insights en tiempo real sobre el desempeño de las ventas, comportamiento de los clientes y tendencias del mercado.',
+          period: 'Febrero 2025 - Actual',
+          role: 'Desarrollador Fullstack',
+          responsibilities: [
+            'Desarrollo de interfaces interactivas y responsivas',
+            'Implementación de gráficos y visualizaciones de datos',
+            'Optimización de rendimiento y SEO',
+            'Desarrollo de componentes reutilizables',
+            'Pruebas unitarias y de integración'
+          ],
+          highlights: [
+            'Gráficos interactivos con D3.js y animaciones suaves',
+            'Exportación de informes en múltiples formatos (PDF, Excel, CSV)',
+            'Interfaz responsiva y accesible siguiendo WCAG 2.1',
+            'Implementación de filtros avanzados y búsqueda en tiempo real',
+            'Optimización de rendimiento con puntuación de 98 en Lighthouse'
+          ]
+        }
+      },
+      gallery: {
+        title: 'Galería',
+        images: {
+          workspace: 'Espacio de trabajo',
+          team: 'Equipo de la empresa',
+          event: 'Evento de la empresa'
+        }
       }
     }
+  },
+  research: {
+    title: 'Investigación & Insights',
+    description: 'Explorando y compartiendo conocimientos sobre desarrollo de software, tecnologías web y buenas prácticas.',
+    readTime: 'min de lectura',
+    readMore: 'Leer más',
   },
   scrollToTop: 'Volver arriba',
   languageSelector: 'Seleccionar idioma',

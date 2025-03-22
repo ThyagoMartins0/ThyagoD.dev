@@ -43,6 +43,67 @@ export type Translation = {
     title: string;
     description: string;
     learnMore: string;
+    mutant: {
+      slogan: string;
+      about: {
+        title: string;
+        description: string;
+        role: string;
+        period: string;
+        location: string;
+      };
+      recommendations: {
+        title: string;
+        gabriel: {
+          name: string;
+          role: string;
+          text: string;
+        };
+        daniel: {
+          name: string;
+          role: string;
+          text: string;
+        };
+      };
+      projects: {
+        title: string;
+        responsibilities: string;
+        highlights: string;
+        technologies: string;
+        myRequests: {
+          title: string;
+          description: string;
+          period: string;
+          role: string;
+          responsibilities: string[];
+          highlights: string[];
+        };
+        biometric: {
+          title: string;
+          description: string;
+          period: string;
+          role: string;
+          responsibilities: string[];
+          highlights: string[];
+        };
+        morada: {
+          title: string;
+          description: string;
+          period: string;
+          role: string;
+          responsibilities: string[];
+          highlights: string[];
+        };
+      };
+      gallery: {
+        title: string;
+        images: {
+          workspace: string;
+          team: string;
+          event: string;
+        };
+      };
+    };
   };
   gallery: {
     title: string;
@@ -64,6 +125,12 @@ export type Translation = {
         alt: string;
       };
     };
+  };
+  research: {
+    title: string;
+    description: string;
+    readTime: string;
+    readMore: string;
   };
   scrollToTop: string;
   languageSelector: string;

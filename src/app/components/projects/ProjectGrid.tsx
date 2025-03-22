@@ -7,12 +7,12 @@ import styles from './ProjectGrid.module.css';
 
 const PROJECTS = [
   {
-    title: 'PicPay Clone',
-    description: 'Clone do aplicativo PicPay desenvolvido como teste técnico, implementando as principais funcionalidades do app original.',
+    title: 'Teste técnico Pic Pay',
+    description: 'Teste técnico do pic pay com a missão de criar uma api gateway de pagamento.',
     image: '/projects/picpay/picpay.png',
-    technologies: ['React Native', 'TypeScript', 'Node.js'],
+    technologies: ['Java', 'Spring'],
     url: 'https://picpay.com',
-    github: 'https://github.com/ThyagoMartins0/picpay-clone',
+    github: 'https://github.com/ThyagoMartins0/API_PAGAMENTO_PICPAY',
     slug: 'picpay-clone'
   },
   {
