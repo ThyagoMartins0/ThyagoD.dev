@@ -11,11 +11,7 @@ export const ptBR: Translation = {
     role: 'Engenheiro de Software',
     bio: {
       title: 'Sobre Mim',
-      description: 'Sou um Engenheiro de Software apaixonado por tecnologia e inovação. Com mais de 5 anos de experiência em desenvolvimento web e mobile, tenho trabalhado com diversas tecnologias e frameworks modernos.',
-      short: 'Sou um Engenheiro de Software apaixonado por tecnologia e inovação. Com mais de 5 anos de experiência em desenvolvimento web e mobile, tenho trabalhado com diversas tecnologias e frameworks modernos.',
-      long: 'Minha jornada na programação começou durante minha graduação em Ciência da Computação, onde descobri minha paixão por criar soluções tecnológicas. Ao longo dos anos, desenvolvi expertise em JavaScript/TypeScript, React, Node.js e outras tecnologias do ecossistema web. Busco constantemente aprender novas tecnologias e metodologias para criar produtos digitais de alta qualidade. Meu objetivo é continuar crescendo profissionalmente e contribuir para projetos inovadores que impactem positivamente a vida das pessoas.',
-      readMore: 'Ler mais',
-      readLess: 'Ler menos',
+      description: 'Sou um Engenheiro de Software apaixonado por tecnologia e inovação. Com mais de 5 anos de experiência em desenvolvimento web e mobile, tenho trabalhado com diversas tecnologias e frameworks modernos.'
     },
     skills: {
       title: 'Habilidades',
@@ -33,6 +29,7 @@ export const ptBR: Translation = {
     mutant: {
       title: 'Mutant',
       description: 'Desenvolvimento de software para a Mutant, uma empresa líder em tecnologia.',
+      learnMore: 'Saiba mais',
       slogan: 'NEVER SETTLE.',
       about: {
         title: 'Sobre a Mutant',
@@ -143,6 +140,5 @@ export const ptBR: Translation = {
     readTime: 'min',
     readMore: 'Ler mais',
   },
-  scrollToTop: 'Voltar ao topo',
-  languageSelector: 'Selecionar idioma',
-} as const; 
+  languageSelector: 'Selecionar idioma'
+}; 
