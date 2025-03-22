@@ -5,139 +5,109 @@
   margin: 10rem 0 2rem 0;
 }
 
-.container {
+.content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-.container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.hero {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
-.description {
-  text-align: center;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
   color: var(--secondary);
-  margin-bottom: 3rem;
   font-size: 1.1rem;
 }
 
-.bioSections {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-.bioSection {
+.grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  align-items: start;
+  margin-bottom: 3rem;
 }
 
-.bioSection:nth-child(even) {
-  grid-template-columns: 2fr 1fr;
-  direction: rtl;
-}
-
-.bioSection:nth-child(even) .bioContent {
-  direction: ltr;
-}
-
-.imageWrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4/3;
-  overflow: hidden;
+.card {
+  background: var(--card-background);
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .image {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
-  transition: transform 0.3s ease;
 }
 
-.bioSection:hover .image {
-  transform: scale(1.05);
+.cardContent {
+  padding: 1.5rem;
 }
 
-.bioContent {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.bioContent h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+.cardContent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   color: var(--foreground);
 }
 
-.bioContent p {
-  font-size: 1.1rem;
+.cardContent p {
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--secondary);
-  text-align: justify;
-  margin: 0;
 }
 
-.readMoreBtn {
-  align-self: flex-start;
-  background: none;
+.viewMore {
+  text-align: center;
+}
+
+.button {
+  background: var(--primary);
+  color: white;
   border: none;
-  color: var(--primary);
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  padding: 0;
-  margin-top: 0.5rem;
-  font-weight: 500;
   transition: opacity 0.2s ease;
 }
 
-.readMoreBtn:hover {
-  opacity: 0.8;
+.button:hover {
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
-  .container {
+  .content {
     padding: 1rem;
   }
-  @media (max-width: 480px) {
-    .container {
-      
-      margin: 14rem 0 2rem 0;
-      padding: 1rem;
-    }
-  }
-  
 
-  .container h1 {
+  .hero h1 {
     font-size: 2rem;
   }
 
-  .description {
+  .hero p {
     font-size: 1rem;
   }
 
-
-  .bioSection,
-  .bioSection:nth-child(even) {
+  .grid {
     grid-template-columns: 1fr;
-    direction: ltr;
-    gap: 1.5rem;
   }
 
-  .bioContent h2 {
-    font-size: 1.5rem;
+  .cardContent h2 {
+    font-size: 1.3rem;
   }
 
-  .bioContent p {
-    font-size: 1rem;
+  .cardContent p {
+    font-size: 0.95rem;
   }
 } 
