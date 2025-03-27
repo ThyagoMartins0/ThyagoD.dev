@@ -6,30 +6,32 @@ import { useState } from 'react'
 import styles from './Profile.module.css'
 
 // Lista de skills
-const SKILLS = ['Java', 'Spring', 'Php', 'Laravel', 'React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'AWS'];
+const SKILLS = ['Java', 'Spring', 'Php', 'Laravel', 'React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Infra'];
 
 // Conjunto padrão de certificados (usado quando nenhuma skill está selecionada)
 const DEFAULT_CERTIFICATES = [
   '/profile/certificados/linux.jpg',
   '/profile/certificados/javazero.jpg',
   '/profile/certificados/php7.jpg',
-  '/profile/certificados/linux.jpg',
-  '/profile/certificados/javazero.jpg',
-  '/profile/certificados/php7.jpg',
+  '/profile/certificados/laravel.jpg',
+  '/profile/certificados/ms_java.jpg',
+ 
 ];
 
 // Mapeamento de skills para seus certificados
 const certificatesBySkill: { [key: string]: string[] } = {
-  Java: ['/profile/certificados/javazero.jpg'],
+  Java: ['/profile/certificados/javazero.jpg','/profile/certificados/ms_java.jpg'],
   Spring: ['/profile/certificados/linux.jpg'],
   Php: ['/profile/certificados/php7.jpg'],
-  Laravel: ['/profile/certificados/php7.jpg'],
-  React: ['/profile/certificados/linux.jpg'],
-  "Next.js": ['/profile/certificados/javazero.jpg'],
-  TypeScript: ['/profile/certificados/php7.jpg'],
-  "Node.js": ['/profile/certificados/linux.jpg'],
-  Python: ['/profile/certificados/javazero.jpg'],
-  AWS: ['/profile/certificados/php7.jpg'],
+  Laravel: ['/profile/certificados/laravel.jpg'],
+  React:[],
+  "Next.js": [],
+  TypeScript: [],
+  "Node.js": [],
+  Python: [],
+  AWS: [],
+  Infra: ['/profile/certificados/redes_fibra.png'],
+
 };
 
 interface PortfolioCarouselProps {
