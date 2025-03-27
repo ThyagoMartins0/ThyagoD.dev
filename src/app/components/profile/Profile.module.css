@@ -238,7 +238,7 @@
   display: flex;
   /* 6 imagens originais + 1 duplicada para loop */
   width: calc((350px + 15px) * 7);
-  animation: slideAnimation 20s linear infinite;
+  animation: slideAnimation 30s linear infinite;
 }
 
 
@@ -259,9 +259,9 @@
 
 .imageContainer {
   position: relative;
-  width: 300px;
-  height: 200px;
-  margin-right: 10px;
+  width: 270px;
+  height: 170px;
+  margin-right: 7px;
   filter: grayscale(100%);
   transition: all 0.3s ease;
   cursor: pointer;
