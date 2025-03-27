@@ -14,7 +14,7 @@ const DEFAULT_CERTIFICATES = [
   '/profile/certificados/javazero.jpg',
   '/profile/certificados/php7.jpg',
   '/profile/certificados/laravel.jpg',
-  '/profile/certificados/ms_java.png',
+  '/profile/certificados/ms_java.jpg',
   '/profile/certificados/cisco.png',
   '/profile/certificados/redes.jpg ',
   '/profile/certificados/zabbix.jpg',
@@ -24,7 +24,7 @@ const DEFAULT_CERTIFICATES = [
 
 // Mapeamento de skills para seus certificados
 const certificatesBySkill: { [key: string]: string[] } = {
-  Java: ['/profile/certificados/javazero.jpg','/profile/certificados/ms_java.png'],
+  Java: ['/profile/certificados/javazero.jpg','/profile/certificados/ms_java.jpg'],
   Spring: [],
   Php: ['/profile/certificados/php7.jpg'],
   Laravel: ['/profile/certificados/laravel.jpg'],
