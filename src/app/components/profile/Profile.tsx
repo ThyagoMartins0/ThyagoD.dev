@@ -37,14 +37,17 @@ interface PortfolioCarouselProps {
 }
 
 function PortfolioCarousel({ certificates }: PortfolioCarouselProps) {
+  // Chamada incondicional dos hooks
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [paused, setPaused] = useState(false);
+
+  // Se não houver certificados para exibir, retorna a mensagem
   if (certificates.length === 0) {
     return <p className={styles.noCertificates}>Nenhum certificado disponível para essa skill.</p>;
   }
 
   // Cria os slides com duplicata da primeira imagem para loop contínuo
   const slides = [...certificates, certificates[0]];
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-  const [paused, setPaused] = useState(false);
 
   const handleImageClick = (index: number) => {
     if (expandedIndex === index) {
@@ -52,12 +55,12 @@ function PortfolioCarousel({ certificates }: PortfolioCarouselProps) {
       setExpandedIndex(null);
       setPaused(false);
     } else {
-      // Expande a imagem clicada e pausa a animação
+      // Caso contrário, expande a imagem clicada e pausa a animação
       setExpandedIndex(index);
       setPaused(true);
     }
   };
-
+  
   return (
     <div className={styles.carouselWrapper}>
       <div className={`${styles.carouselContainer} ${paused ? styles.paused : ''}`}>
