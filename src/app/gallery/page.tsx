@@ -16,13 +16,13 @@ export default function GalleryPage() {
       text: 'Graduated in Systems Analysis and Development, focusing on web and mobile development. Always seeking to learn new technologies and methodologies to create innovative solutions.'
     },
     {
-      image: '/galeria/MAR_8999.jpg',
+      image: '/galeria/FOTOPERFILPROFISSIONAL.jpg',
       alt: 'Thyago in blue clothes',
       title: 'Professional Experience',
       text: 'Full Stack Developer with experience in React, Next.js, Node.js, and TypeScript. I have worked on various challenging projects, contributing to the development of scalable and high-performance solutions.'
     },
     {
-      image: '/galeria/MAR_9000.jpg',
+      image: '/galeria/CORRIDA.jpg',
       alt: 'Thyago running',
       title: 'Personal Life & Hobbies',
       text: 'Beyond programming, I am passionate about sports and physical activities. I believe that a healthy body keeps the mind healthy, and this directly reflects on the quality of my work and creativity.'
