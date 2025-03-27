@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from "./context/ThemeContext";
-import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import { LanguageProvider } from './i18n/LanguageContext';
 import LanguageSelector from './components/LanguageSelector/LanguageSelector';
 
@@ -36,6 +37,7 @@ export default function RootLayout({
             </div>
             {children}
             <ScrollToTop />
+            <Analytics /> 
           </LanguageProvider>
         </ThemeProvider>
       </body>
