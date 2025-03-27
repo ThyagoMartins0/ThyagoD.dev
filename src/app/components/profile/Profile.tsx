@@ -6,7 +6,7 @@ import { useState } from 'react'
 import styles from './Profile.module.css'
 
 // Lista de skills
-const SKILLS = ['Java', 'Spring', 'Php', 'Laravel', 'React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Infra'];
+const SKILLS = ['Java', 'Spring', 'Php', 'Laravel', 'React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Cloud', 'Infra', 'Linux'];
 
 // Conjunto padrão de certificados (usado quando nenhuma skill está selecionada)
 const DEFAULT_CERTIFICATES = [
@@ -14,14 +14,18 @@ const DEFAULT_CERTIFICATES = [
   '/profile/certificados/javazero.jpg',
   '/profile/certificados/php7.jpg',
   '/profile/certificados/laravel.jpg',
-  '/profile/certificados/ms_java.jpg',
- 
+  '/profile/certificados/ms_java.png',
+  '/profile/certificados/cisco.png',
+  '/profile/certificados/redes.jpg ',
+  '/profile/certificados/zabbix.jpg',
+  '/profile/certificados/devops.png',
+  '/profile/certificados/google.png',
 ];
 
 // Mapeamento de skills para seus certificados
 const certificatesBySkill: { [key: string]: string[] } = {
-  Java: ['/profile/certificados/javazero.jpg','/profile/certificados/ms_java.jpg'],
-  Spring: ['/profile/certificados/linux.jpg'],
+  Java: ['/profile/certificados/javazero.jpg','/profile/certificados/ms_java.png'],
+  Spring: [],
   Php: ['/profile/certificados/php7.jpg'],
   Laravel: ['/profile/certificados/laravel.jpg'],
   React:[],
@@ -29,8 +33,9 @@ const certificatesBySkill: { [key: string]: string[] } = {
   TypeScript: [],
   "Node.js": [],
   Python: [],
-  AWS: [],
-  Infra: ['/profile/certificados/redes_fibra.png'],
+  Linux: ['/profile/certificados/linux.jpg','/profile/certificados/devops.png'],
+  Cloud: [],
+  Infra: ['/profile/certificados/redes_fibra.png','/profile/certificados/cisco.png' ,'/profile/certificados/redes.jpg ', '/profile/certificados/zabbix.jpg', '/profile/certificados/google.png'],
 
 };
 
