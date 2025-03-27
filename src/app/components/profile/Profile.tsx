@@ -6,15 +6,22 @@ import { useState } from 'react'
 import styles from './Profile.module.css'
 
 // Lista de skills
-const SKILLS = ['Java', 'Spring', 'Php', 'Laravel', 'React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Cloud', 'Infra', 'Linux'];
+const SKILLS = ['Java', 'Spring', 'Php', 'Laravel', 'React', 'TypeScript', 'Node.js', 'Python', 'Cloud', 'Infra', 'Linux'];
 
 // Conjunto padrão de certificados (usado quando nenhuma skill está selecionada)
 const DEFAULT_CERTIFICATES = [
+  '/profile/certificados/eng.jpg',
   '/profile/certificados/linux.jpg',
   '/profile/certificados/javazero.jpg',
   '/profile/certificados/php7.jpg',
+  '/profile/certificados/REACT_ZERO.png',
+  '/profile/certificados/nest_zero.png',
+  '/profile/certificados/node_zero.png',
+  '/profile/certificados/azure_zero.png',
   '/profile/certificados/laravel.jpg',
   '/profile/certificados/ms_java.jpg',
+  '/profile/certificados/ms_java_zero.png',
+  '/profile/certificados/spring_teste_zero.png',
   '/profile/certificados/cisco.png',
   '/profile/certificados/redes.jpg ',
   '/profile/certificados/zabbix.jpg',
@@ -24,17 +31,16 @@ const DEFAULT_CERTIFICATES = [
 
 // Mapeamento de skills para seus certificados
 const certificatesBySkill: { [key: string]: string[] } = {
-  Java: ['/profile/certificados/javazero.jpg','/profile/certificados/ms_java.jpg'],
-  Spring: [],
+  Java: ['/profile/certificados/javazero.jpg','/profile/certificados/ms_java.jpg',  '/profile/certificados/ms_java_zero.png',  ],
+  Spring: [  '/profile/certificados/ms_java_zero.png',   '/profile/certificados/spring_teste_zero.png'  ],
   Php: ['/profile/certificados/php7.jpg'],
   Laravel: ['/profile/certificados/laravel.jpg'],
-  React:[],
-  "Next.js": [],
-  TypeScript: [],
-  "Node.js": [],
+  React:[  '/profile/certificados/REACT_ZERO.png'  ],
+  TypeScript: ['/profile/certificados/nest_zero.png', ],
+  "Node.js": [  '/profile/certificados/node_zero.png', '/profile/certificados/nest_zero.png', ],
   Python: [],
   Linux: ['/profile/certificados/linux.jpg','/profile/certificados/devops.png'],
-  Cloud: [],
+  Cloud: [  '/profile/certificados/azure_zero.png'  ],
   Infra: ['/profile/certificados/redes_fibra.png','/profile/certificados/cisco.png' ,'/profile/certificados/redes.jpg ', '/profile/certificados/zabbix.jpg', '/profile/certificados/google.png'],
 
 };
