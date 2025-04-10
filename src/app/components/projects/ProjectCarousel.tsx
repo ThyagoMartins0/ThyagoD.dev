@@ -5,27 +5,32 @@ import Image from 'next/image';
 import styles from './ProjectCarousel.module.css';
 
 interface ProjectCarouselProps {
-  images: {
+  projects: {
+    title: string;
+    description: string;
+    image: string;
+    technologies: string[];
     url: string;
-    caption: string;
+    github: string;
+    slug: string;
   }[];
 }
 
-export default function ProjectCarousel({ images }: ProjectCarouselProps) {
+export default function ProjectCarousel({ projects }: ProjectCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [projects.length]);
 
   return (
     <div className={styles.carouselContainer}>
       <div className={styles.carousel}>
-        {images.map((image, index) => (
+        {projects.map((project, index) => (
           <div
             key={index}
             className={`${styles.slide} ${index === currentIndex ? styles.active : ''}`}
@@ -33,8 +38,8 @@ export default function ProjectCarousel({ images }: ProjectCarouselProps) {
             <div className={styles.slideContent}>
               <div className={styles.imageWrapper}>
                 <Image
-                  src={image.url}
-                  alt={image.caption}
+                  src={project.image}
+                  alt={project.title}
                   width={800}
                   height={600}
                   className={styles.image}
