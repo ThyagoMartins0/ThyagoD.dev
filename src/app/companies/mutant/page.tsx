@@ -5,13 +5,14 @@ import styles from './page.module.css'
 import { useLanguage } from '@/app/i18n/LanguageContext';
 
 const GALLERY_IMAGES = [
-  {
-    src: '/companies/mutant/image/fotodemateriais.jpg',
-    alt: 'workspace'
-  },
+ 
   {
     src: '/companies/mutant/gallery/team.jpg',
     alt: 'team'
+  },
+  {
+    src: '/companies/mutant/image/fotodemateriais.jpg',
+    alt: 'workspace'
   },
   {
     src: '/companies/mutant/gallery/event.jpg',

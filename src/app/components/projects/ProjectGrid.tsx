@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
+import ProjectCarousel from './ProjectCarousel';
 import TechFilter from './TechFilter';
 import styles from './ProjectGrid.module.css';
 
@@ -38,6 +39,7 @@ const PROJECTS = [
 
 export default function ProjectGrid() {
   const [selectedTech, setSelectedTech] = useState<string | null>(null);
+  const [viewMode, setViewMode] = useState<'grid' | 'carousel'>('carousel');
 
   const filteredProjects = selectedTech
     ? PROJECTS.filter(project => project.technologies.includes(selectedTech))
@@ -45,19 +47,41 @@ export default function ProjectGrid() {
 
   return (
     <section className={styles.section}>
-      <h2>Projetos</h2>
+      <div className={styles.header}>
+        <h2>Projetos</h2>
+        <div className={styles.viewToggle}>
+          <button 
+            className={`${styles.toggleButton} ${viewMode === 'grid' ? styles.active : ''}`}
+            onClick={() => setViewMode('grid')}
+          >
+            Grid
+          </button>
+          <button 
+            className={`${styles.toggleButton} ${viewMode === 'carousel' ? styles.active : ''}`}
+            onClick={() => setViewMode('carousel')}
+          >
+            Carrossel
+          </button>
+        </div>
+      </div>
+      
       <TechFilter 
         selectedTech={selectedTech} 
         onSelectTech={setSelectedTech} 
       />
-      <div className={styles.grid}>
-        {filteredProjects.map((project) => (
-          <ProjectCard 
-            key={project.title}
-            {...project}
-          />
-        ))}
-      </div>
+      
+      {viewMode === 'grid' ? (
+        <div className={styles.grid}>
+          {filteredProjects.map((project) => (
+            <ProjectCard 
+              key={project.title}
+              {...project}
+            />
+          ))}
+        </div>
+      ) : (
+        <ProjectCarousel projects={filteredProjects} />
+      )}
     </section>
   );
 } 

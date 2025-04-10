@@ -1,28 +1,55 @@
 .section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
-.section h2 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: var(--text-primary);
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.viewToggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.toggleButton {
+  background: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.toggleButton:hover {
+  background: var(--background-tertiary);
+}
+
+.toggleButton.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  width: 100%;
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
-  .section {
-    padding: 2rem 0;
-  }
-
-  .grid {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
   }
 } 

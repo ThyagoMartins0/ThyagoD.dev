@@ -58,24 +58,21 @@ export const ptBR: Translation = {
         technologies: 'Tecnologias',
         myRequests: {
           title: 'Minha solicitações ( Alocado na empresa: VIVO TELEFONICA)',
-          description: 'Desenvolvimento de uma API robusta para integração com múltiplos gateways de pagamento, permitindo processamento de transações em tempo real e gestão de cobranças recorrentes. O sistema foi projetado para lidar com alto volume de transações, garantindo consistência e rastreabilidade em todas as operações.',
+          description:  'Desenvolvimento de microserviços robustos para integração com múltiplos gateways e sistemas no aplicativo da Vivo, permitindo que o cliente realize operações e acesse informações diretamente, sem a necessidade de um atendente. O sistema foi projetado para lidar com um alto volume de usuários e solicitações, garantindo consistência e rastreabilidade em todas as operações no momento de realizar uma solicitação desde a um suporte a geração de boletos — desde o acesso do usuário até cada passo dado antes de realizar chamadas ao sistema.',
           period: 'Agosto 2024 - Outubro 2024  /  Dezembro -  2024 - Fevereiro 2025',
           role: 'Backend Developer',
           responsibilities: [
             'Desenvolvimento de APIs RESTful seguindo padrões de mercado',
             'Implementação de padrões de design e arquitetura limpa',
-            'Integração com sistemas externos e gateways de pagamento',
+            'Integração com sistemas externos e gateways',
             'Documentação técnica e de API usando Swagger',
-            'Code review',
-            'Mentoria de desenvolvedores júnior',
+            'Code review e testes automatizados',
+            'Implementação continua de arquitetura hexagonal',
             'Desenvolvimento de testes automatizados com cobertura superior a 90%'
           ],
           highlights: [
-            'Implementação de sistema de retry para transações falhas com dead letter queue',
-            'Desenvolvimento de webhooks para notificações em tempo real com garantia de entrega',
-            'Criação de testes automatizados com cobertura superior a 80%',
+            'Implementação de feat flags para testes de novas funcionalidades',
             'Implementação de circuit breaker para integrações externas',
-            'Otimização de performance resultando em redução de 40% no tempo de resposta'
           ]
         },
         biometric: {
