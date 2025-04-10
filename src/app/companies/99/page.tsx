@@ -61,7 +61,7 @@ export default function NinetyNinePage() {
             </div>
             <div className={styles.detailItem}>
               <h3>{t.companies.ninetyNine.about.period}</h3>
-              <PeriodDisplay startDate="2023-08-01" endDate="2024-01-31" />
+             
             </div>
             <div className={styles.detailItem}>
               <h3>{t.companies.ninetyNine.about.location}</h3>
