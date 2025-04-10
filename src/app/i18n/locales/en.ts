@@ -132,6 +132,34 @@ export const en: Translation = {
         period: "Period",
         location: "Location"
       },
+      projects: {
+        title: "Projects",
+        responsibilities: "Responsibilities",
+        highlights: "Highlights",
+        technologies: "Technologies",
+        freelance: {
+          title: "Freelance Development",
+          description: "Development of various projects as a freelancer, working with different technologies and frameworks. Each project was an opportunity to learn new skills and apply knowledge in different contexts.",
+          period: "August 2023 - January 2024",
+          role: "Fullstack Developer",
+          responsibilities: [
+            "Development of web and mobile applications",
+            "Implementation of RESTful APIs",
+            "Integration with databases and external services",
+            "Development of responsive interfaces",
+            "Automated testing and quality assurance",
+            "Technical and user documentation",
+            "Project management and client communication"
+          ],
+          highlights: [
+            "Development of high-performance and scalable applications",
+            "Implementation of development best practices and clean architecture",
+            "Experience with different technologies and frameworks",
+            "Remote work and efficient time management",
+            "Clear and professional communication with clients"
+          ]
+        }
+      },
       gallery: {
         title: "Gallery",
         images: {

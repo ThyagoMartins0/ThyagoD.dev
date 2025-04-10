@@ -5,9 +5,10 @@ import { calculateTimeElapsed } from '../utils/dateUtils';
 
 interface PeriodDisplayProps {
   startDate: string;
+  endDate?: string;
 }
 
-export default function PeriodDisplay({ startDate }: PeriodDisplayProps) {
+export default function PeriodDisplay({ startDate, endDate }: PeriodDisplayProps) {
   const [timeElapsed, setTimeElapsed] = useState('');
 
   useEffect(() => {
@@ -28,7 +29,7 @@ export default function PeriodDisplay({ startDate }: PeriodDisplayProps) {
 
   return (
     <p>
-      {startDate.split('-')[0]} - Atual - {timeElapsed}
+      {startDate.split('-')[0]} - {endDate ? endDate.split('-')[0] : 'Atual'} - {timeElapsed}
     </p>
   );
 } 

@@ -118,6 +118,20 @@ export type Translation = {
         period: string;
         location: string;
       };
+      projects: {
+        title: string;
+        responsibilities: string;
+        highlights: string;
+        technologies: string;
+        freelance: {
+          title: string;
+          description: string;
+          period: string;
+          role: string;
+          responsibilities: readonly string[];
+          highlights: readonly string[];
+        };
+      };
       gallery: {
         title: string;
         images: {
