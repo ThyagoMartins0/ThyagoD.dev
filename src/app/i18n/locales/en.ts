@@ -2,7 +2,7 @@ import { Translation } from '../index';
 
 export const en: Translation = {
   header: {
-    about: "About me",
+    about: "About Me",
     projects: "Projects",
     research: "Research",
     gallery: "Gallery"
@@ -15,7 +15,7 @@ export const en: Translation = {
     },
     skills: {
       title: "Skills",
-      description: "My programming journey began during my Computer Science degree, where I had my first contact with web development. Since then, I have been specializing in modern technologies and best development practices."
+      description: "My journey in programming began during my Computer Science degree, where I had my first contact with web development. Since then, I have specialized in modern technologies and development best practices."
     }
   },
   video: {
@@ -25,11 +25,11 @@ export const en: Translation = {
   companies: {
     title: "Companies",
     description: "Get to know the companies I've worked for and the projects I've developed.",
-    learnMore: "Learn more",
+    learnMore: "Learn More",
     mutant: {
       title: "Mutant",
       description: "Software development for Mutant, a leading technology company.",
-      learnMore: "Learn more",
+      learnMore: "Learn More",
       slogan: "NEVER SETTLE.",
       about: {
         title: "About Mutant",
@@ -47,8 +47,8 @@ export const en: Translation = {
         },
         daniel: {
           name: "Daniel Nogueira",
-          role: "Software Developer at @Mutant | TypeScript | React | Node | Tests",
-          text: "I had the pleasure of working with Thyago on challenging projects and his technical ability is impressive. He not only masters the necessary technologies but also has an excellent architectural vision and always seeks the best development practices."
+          role: "Software Developer @Mutant | TypeScript | React | Node | Tests",
+          text: "I had the pleasure of working with Thyago on challenging projects and his technical ability is impressive. Not only does he master the necessary technologies but he also has an excellent architectural vision and always seeks the best development practices."
         }
       },
       projects: {
@@ -57,61 +57,53 @@ export const en: Translation = {
         highlights: "Highlights",
         technologies: "Technologies",
         myRequests: {
-          title: "My Requests (Allocated at: VIVO TELEFONICA)",
-          description: "Development of a robust API for integration with multiple payment gateways, enabling real-time transaction processing and recurring billing management.",
+          title: "My Requests (Assigned to: VIVO TELEFONICA)",
+          description: "Development of robust microservices for integration with multiple gateways and systems in the Vivo application, allowing the customer to perform operations and access information directly, without the need for an agent. The system was designed to handle a high volume of users and requests, ensuring consistency and traceability in all operations when making a request, from support to ticket generation — from user access to each step taken before making system calls.",
           period: "August 2024 - October 2024 / December 2024 - February 2025",
           role: "Backend Developer",
           responsibilities: [
             "Development of RESTful APIs following market standards",
             "Implementation of design patterns and clean architecture",
-            "Integration with external systems and payment gateways",
+            "Integration with external systems and gateways",
             "Technical and API documentation using Swagger",
-            "Code review",
-            "Junior developer mentoring",
+            "Code review and automated testing",
+            "Continuous implementation of hexagonal architecture",
             "Development of automated tests with over 90% coverage"
           ],
           highlights: [
-            "Implementation of retry system for failed transactions with dead letter queue",
-            "Development of webhooks for real-time notifications with delivery guarantee",
-            "Creation of automated tests with over 80% coverage",
-            "Implementation of circuit breaker for external integrations",
-            "Performance optimization resulting in 40% reduction in response time"
+            "Implementation of feature flags for testing new functionalities",
+            "Implementation of circuit breaker for external integrations"
           ]
         },
         biometric: {
-          title: "Biometric Project (Allocated at: VIVO TELEFONICA)",
-          description: "Creation of a complete system for order management, including real-time tracking and integration with logistics systems.",
+          title: "Biometric Project (Assigned to: VIVO TELEFONICA)",
+          description: "Focus on creating interfaces and implementing new designs for system functionalities, ensuring a fluid and responsive user experience. The project is directly related to the security area, where there is an opportunity to actively contribute. I use React to develop interfaces, applying best practices and reusable components to maintain scalable and efficient code.",
           period: "October 2024 - December 2024",
           role: "Fullstack Developer",
           responsibilities: [
             "Full-stack application development",
-            "Database and cache modeling",
-            "Implementation of websockets for real-time updates",
-            "AWS infrastructure deployment and configuration",
-            "Development of responsive interfaces"
+            "Responsive interface development",
+            "Creation of unit tests, integration tests and mutation tests",
+            "Application of tagging in system and tests",
           ],
           highlights: [
-            "Real-time dashboard with Socket.IO for instant updates",
-            "Redis cache system reducing database load by 60%",
-            "Integration with multiple tracking APIs",
-            "Implementation of push notification system",
-            "Development of automated reports"
+            'I rewrote the unit tests to achieve over 90% coverage'
           ]
         },
         morada: {
-          title: "Morada Project (Allocated at: VIVO TELEFONICA)",
+          title: "Morada Project (Assigned to: VIVO TELEFONICA)",
           description: "Development of a platform for visualization and analysis of sales data and business metrics.",
           period: "February 2025 - Present",
           role: "Fullstack Developer",
           responsibilities: [
             "Development of interactive and responsive interfaces",
-            "Implementation of graphs and data visualizations",
+            "Implementation of charts and data visualizations",
             "Performance and SEO optimization",
             "Development of reusable components",
-            "Unit and integration tests"
+            "Unit and integration testing"
           ],
           highlights: [
-            "Interactive graphs with D3.js and smooth animations",
+            "Interactive charts with D3.js and smooth animations",
             "Report export in multiple formats (PDF, Excel, CSV)",
             "Responsive and accessible interface following WCAG 2.1",
             "Implementation of advanced filters and real-time search",
@@ -131,14 +123,14 @@ export const en: Translation = {
   },
   gallery: {
     title: "Gallery",
-    description: "Learn more about me through photos and videos.",
-    viewMore: "View more"
+    description: "Get to know me better through photos and videos.",
+    viewMore: "View More"
   },
   research: {
     title: "Research",
     description: "Articles and research about software development.",
     readTime: "min",
-    readMore: "Read more"
+    readMore: "Read More"
   },
   languageSelector: "Select language"
 }; 

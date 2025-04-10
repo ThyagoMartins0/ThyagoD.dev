@@ -2,7 +2,7 @@ import { Translation } from '../index';
 
 export const es: Translation = {
   header: {
-    about: 'Sobre mí',
+    about: 'Sobre Mí',
     projects: 'Proyectos',
     research: 'Investigación',
     gallery: 'Galería',
@@ -15,7 +15,7 @@ export const es: Translation = {
     },
     skills: {
       title: 'Habilidades',
-      description: 'Mi viaje en programación comenzó durante mi licenciatura en Ciencias de la Computación, donde tuve mi primer contacto con el desarrollo web. Desde entonces, me he especializado en tecnologías modernas y mejores prácticas de desarrollo.',
+      description: 'Mi viaje en la programación comenzó durante mi licenciatura en Ciencias de la Computación, donde tuve mi primer contacto con el desarrollo web. Desde entonces, me he especializado en tecnologías modernas y mejores prácticas de desarrollo.',
     },
   },
   video: {
@@ -24,13 +24,13 @@ export const es: Translation = {
   },
   companies: {
     title: 'Empresas',
-    description: 'Conoce las empresas para las que he trabajado y los proyectos que he desarrollado.',
-    learnMore: 'Conocer más',
+    description: 'Conoce las empresas en las que he trabajado y los proyectos que he desarrollado.',
+    learnMore: 'Saber Más',
     mutant: {
       title: 'Mutant',
       description: 'Desarrollo de software para Mutant, una empresa líder en tecnología.',
-      learnMore: 'Conocer más',
-      slogan: 'NEVER SETTLE.',
+      learnMore: 'Saber Más',
+      slogan: 'NUNCA TE CONFORMES.',
       about: {
         title: 'Sobre Mutant',
         description: 'Mutant es una empresa de tecnología que ofrece soluciones innovadoras a sus clientes.',
@@ -47,7 +47,7 @@ export const es: Translation = {
         },
         daniel: {
           name: 'Daniel Nogueira',
-          role: 'Desarrollador de Software en @Mutant | TypeScript | React | Node | Tests',
+          role: 'Desarrollador de Software @Mutant | TypeScript | React | Node | Tests',
           text: 'Tuve el placer de trabajar con Thyago en proyectos desafiantes y su capacidad técnica es impresionante. No solo domina las tecnologías necesarias sino que también tiene una excelente visión arquitectónica y siempre busca las mejores prácticas de desarrollo.'
         }
       },
@@ -57,45 +57,37 @@ export const es: Translation = {
         highlights: 'Destacados',
         technologies: 'Tecnologías',
         myRequests: {
-          title: 'My Requests (Asignado a: VIVO TELEFONICA)',
-          description: 'Desarrollo de una API robusta para integración con múltiples pasarelas de pago, permitiendo el procesamiento de transacciones en tiempo real y la gestión de facturación recurrente.',
+          title: 'Mis Solicitudes (Asignado a: VIVO TELEFONICA)',
+          description: 'Desarrollo de microservicios robustos para integración con múltiples gateways y sistemas en la aplicación Vivo, permitiendo al cliente realizar operaciones y acceder a información directamente, sin necesidad de un agente. El sistema fue diseñado para manejar un alto volumen de usuarios y solicitudes, asegurando consistencia y trazabilidad en todas las operaciones al realizar una solicitud, desde el soporte hasta la generación de tickets — desde el acceso del usuario hasta cada paso tomado antes de realizar llamadas al sistema.',
           period: 'Agosto 2024 - Octubre 2024 / Diciembre 2024 - Febrero 2025',
           role: 'Desarrollador Backend',
           responsibilities: [
             'Desarrollo de APIs RESTful siguiendo estándares del mercado',
             'Implementación de patrones de diseño y arquitectura limpia',
-            'Integración con sistemas externos y pasarelas de pago',
+            'Integración con sistemas y gateways externos',
             'Documentación técnica y de API usando Swagger',
-            'Revisión de código',
-            'Mentoría a desarrolladores junior',
+            'Revisión de código y pruebas automatizadas',
+            'Implementación continua de arquitectura hexagonal',
             'Desarrollo de pruebas automatizadas con más del 90% de cobertura'
           ],
           highlights: [
-            'Implementación de sistema de reintentos para transacciones fallidas con cola de mensajes muertos',
-            'Desarrollo de webhooks para notificaciones en tiempo real con garantía de entrega',
-            'Creación de pruebas automatizadas con más del 80% de cobertura',
-            'Implementación de circuit breaker para integraciones externas',
-            'Optimización de rendimiento resultando en 40% de reducción en tiempo de respuesta'
+            'Implementación de feature flags para probar nuevas funcionalidades',
+            'Implementación de circuit breaker para integraciones externas'
           ]
         },
         biometric: {
           title: 'Proyecto Biométrico (Asignado a: VIVO TELEFONICA)',
-          description: 'Creación de un sistema completo para gestión de pedidos, incluyendo seguimiento en tiempo real e integración con sistemas logísticos.',
+          description: 'Atención a la creación de interfaces e implementación de nuevos diseños para las funcionalidades del sistema, asegurando una experiencia fluida y responsiva para el usuario. El proyecto está directamente relacionado con el área de seguridad, donde existe la oportunidad de contribuir activamente. Utilizo React para desarrollar interfaces, aplicando buenas prácticas y componentes reutilizados para mantener un código escalable y eficiente.',
           period: 'Octubre 2024 - Diciembre 2024',
           role: 'Desarrollador Fullstack',
           responsibilities: [
             'Desarrollo de aplicación full-stack',
-            'Modelado de base de datos y caché',
-            'Implementación de websockets para actualizaciones en tiempo real',
-            'Despliegue y configuración de infraestructura AWS',
-            'Desarrollo de interfaces responsivas'
+            'Desarrollo de interfaz responsiva',
+            'Creación de pruebas unitarias, de integración y de mutación',
+            'Aplicación de etiquetado en sistema y pruebas',
           ],
           highlights: [
-            'Dashboard en tiempo real con Socket.IO para actualizaciones instantáneas',
-            'Sistema de caché Redis reduciendo la carga de la base de datos en 60%',
-            'Integración con múltiples APIs de seguimiento',
-            'Implementación de sistema de notificaciones push',
-            'Desarrollo de reportes automatizados'
+            'Reescribí las pruebas unitarias para lograr más del 90% de cobertura'
           ]
         },
         morada: {
@@ -108,11 +100,11 @@ export const es: Translation = {
             'Implementación de gráficos y visualizaciones de datos',
             'Optimización de rendimiento y SEO',
             'Desarrollo de componentes reutilizables',
-            'Pruebas unitarias e integración'
+            'Pruebas unitarias y de integración'
           ],
           highlights: [
             'Gráficos interactivos con D3.js y animaciones suaves',
-            'Exportación de reportes en múltiples formatos (PDF, Excel, CSV)',
+            'Exportación de informes en múltiples formatos (PDF, Excel, CSV)',
             'Interfaz responsiva y accesible siguiendo WCAG 2.1',
             'Implementación de filtros avanzados y búsqueda en tiempo real',
             'Optimización de rendimiento con puntuación Lighthouse de 98'
@@ -131,14 +123,14 @@ export const es: Translation = {
   },
   gallery: {
     title: 'Galería',
-    description: 'Conoce más sobre mí a través de fotos y videos.',
-    viewMore: 'Ver más'
+    description: 'Conóceme mejor a través de fotos y videos.',
+    viewMore: 'Ver Más'
   },
   research: {
     title: 'Investigación',
     description: 'Artículos e investigaciones sobre desarrollo de software.',
     readTime: 'min',
-    readMore: 'Leer más',
+    readMore: 'Leer Más',
   },
   languageSelector: 'Seleccionar idioma'
 }; 

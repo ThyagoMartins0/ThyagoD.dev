@@ -77,22 +77,19 @@ export const ptBR: Translation = {
         },
         biometric: {
           title: 'Projeto Biometria ( Alocado na empresa: VIVO TELEFONICA)',
-          description: 'Criação de um sistema completo para gerenciamento de pedidos, incluindo tracking em tempo real e integração com sistemas de logística. A plataforma permite o acompanhamento em tempo real do status dos pedidos, gestão de estoque e análise de métricas de entrega.',
+          description: 'Atuo na criação de interfaces e na implementação de novos designs para funcionalidades do sistema, garantindo uma experiência fluida e responsiva ao usuário. O projeto está diretamente relacionado à área de segurança, na qual tive a oportunidade de contribuir ativamente. Utilizo React no desenvolvimento das interfaces, aplicando boas práticas e componentes reutilizáveis para manter o código escalável e eficiente.',
+
           period: 'Outubro 2024 - Dezembro 2024',
           role: 'Fullstack Developer',
           responsibilities: [
             'Desenvolvimento full-stack da aplicação',
-            'Modelagem de banco de dados e cache',
-            'Implementação de websockets para atualizações em tempo real',
-            'Deploy e configuração de infraestrutura na AWS',
-            'Desenvolvimento de interfaces responsivas'
+            'Desenvolvimento de interfaces responsivas',
+            'Criação de testes unitários, de integração e de mutação  ',
+            'Aplicação do tagueamento em sistema e em testes',
           ],
+          
           highlights: [
-            'Dashboard em tempo real com Socket.IO para atualizações instantâneas',
-            'Sistema de cache com Redis reduzindo carga no banco de dados em 60%',
-            'Integração com múltiplas APIs de rastreamento',
-            'Implementação de sistema de notificações push',
-            'Desenvolvimento de relatórios automatizados'
+            'Reescrevi os testes unitario deixando a cima dos 90% de cobertura'
           ]
         },
         morada: {

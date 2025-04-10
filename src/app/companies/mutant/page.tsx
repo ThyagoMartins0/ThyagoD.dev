@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { useLanguage } from '@/app/i18n/LanguageContext';
+import PeriodDisplay from '@/app/components/PeriodDisplay';
 
 const GALLERY_IMAGES = [
  
@@ -27,7 +28,7 @@ export default function MutantPage() {
     {
       title: t.companies.mutant.projects.myRequests.title,
       description: t.companies.mutant.projects.myRequests.description,
-      period: t.companies.mutant.projects.myRequests.period,
+      period: '2024-02-01',
       technologies: ["Java 17", "Spring Boot 3", "Sonar", "PostgreSQL", "kafka",  "Microservices", "JUnit", "Mockito", "Azure Devops","MongoDB","Postman"],
       role: t.companies.mutant.projects.myRequests.role,
       responsibilities: t.companies.mutant.projects.myRequests.responsibilities,
@@ -37,7 +38,7 @@ export default function MutantPage() {
       title: t.companies.mutant.projects.biometric.title,
       description: t.companies.mutant.projects.biometric.description,
       period: t.companies.mutant.projects.biometric.period,
-      technologies: ["Node.js", "TypeScript", "NestJS", "MongoDB", "Redis", "AWS", "Docker", "Jest", "Socket.IO"],
+      technologies: ["Node.js", "TypeScript", "NestJS",  "Docker", "Jest","Mutation","Jest","JUnit","Mockito","Postman"],
       role: t.companies.mutant.projects.biometric.role,
       responsibilities: t.companies.mutant.projects.biometric.responsibilities,
       highlights: t.companies.mutant.projects.biometric.highlights
@@ -91,7 +92,7 @@ export default function MutantPage() {
             </div>
             <div className={styles.detailItem}>
               <h3>{t.companies.mutant.about.period}</h3>
-              <p>2024 - Atual</p>
+              <PeriodDisplay startDate="2024-08-01" />
             </div>
             <div className={styles.detailItem}>
               <h3>{t.companies.mutant.about.location}</h3>
@@ -216,19 +217,6 @@ export default function MutantPage() {
                   height={300}
                   className={styles.galleryImage}
                 />
-                <div className={styles.playOverlay}>
-                  <svg 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24" 
-                    fill="none"
-                  >
-                    <path 
-                      d="M8 5v14l11-7L8 5z" 
-                      fill="currentColor"
-                    />
-                  </svg>
-                </div>
               </div>
             ))}
           </div>

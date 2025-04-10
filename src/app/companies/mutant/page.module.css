@@ -518,27 +518,6 @@
   transform: scale(1.05);
 }
 
-.playOverlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background: rgba(0,0,0,0.7);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.galleryItem:hover .playOverlay {
-  opacity: 1;
-}
-
 @media (max-width: 968px) {
   .projectContent {
     grid-template-columns: 1fr;

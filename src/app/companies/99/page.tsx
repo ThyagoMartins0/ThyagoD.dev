@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import PeriodDisplay from './PeriodDisplay'
 
 const GALLERY_IMAGES = [
   {
@@ -59,7 +60,7 @@ export default function MutantPage() {
             </div>
             <div className={styles.detailItem}>
               <h3>Período</h3>
-              <p>2024 - Atual</p>
+              <PeriodDisplay startDate="2024-02-01" />
             </div>
             <div className={styles.detailItem}>
               <h3>Localização</h3>
