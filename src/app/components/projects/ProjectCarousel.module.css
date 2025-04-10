@@ -24,6 +24,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .slideContent {
@@ -51,7 +58,7 @@
   filter: grayscale(100%);
 }
 
-.image.hovered {
+.image:hover {
   filter: grayscale(0%);
   transform: scale(1.05);
 }
@@ -178,5 +185,11 @@
   
   .overlay p {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 200px;
   }
 } 

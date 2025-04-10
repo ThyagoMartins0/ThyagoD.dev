@@ -1,23 +1,28 @@
+'use client';
+
 import Image from 'next/image'
 import styles from './page.module.css'
-import PeriodDisplay from './PeriodDisplay'
+import PeriodDisplay from '@/app/components/PeriodDisplay'
+import { useLanguage } from '@/app/i18n/LanguageContext';
 
 const GALLERY_IMAGES = [
   {
-    src: '/companies/mutant/gallery/team.jpg',
-    alt: 'Espaço de trabalho'
+    src: '/companies/99/gallery/workspace.jpg',
+    alt: 'workspace'
   },
   {
-    src: '/companies/mutant/gallery/team.jpg',
-    alt: 'Time da empresa'
+    src: '/companies/99/gallery/team.jpg',
+    alt: 'team'
   },
   {
-    src: '/companies/mutant/gallery/event.jpg',
-    alt: 'Evento da empresa'
+    src: '/companies/99/gallery/event.jpg',
+    alt: 'event'
   }
 ]
 
-export default function MutantPage() {
+export default function NinetyNinePage() {
+  const { t } = useLanguage();
+  
   return (
     <main className={styles.main}>
       {/* Banner */}
@@ -34,12 +39,12 @@ export default function MutantPage() {
             <div className={styles.companyLogo}>
               <Image
                 src="/companies/99/image/99freelas_logo.jpg"
-                alt="Mutant"
+                alt="99 Freelas"
                 width={80}
                 height={80}
               />
             </div>
-            <h1>99 Freelas.</h1>
+            <h1>{t.companies.ninetyNine.slogan}</h1>
           </div>
         </div>
       </section>
@@ -47,58 +52,39 @@ export default function MutantPage() {
       {/* Descrição */}
       <section className={styles.description}>
         <div className={styles.container}>
-          <h2>Sobre a Empresa</h2>
-          <p>
-            A Mutant é uma empresa inovadora focada em desenvolvimento de software
-            e soluções tecnológicas. Com uma cultura única e um ambiente dinâmico,
-            buscamos constantemente novos desafios e oportunidades de crescimento.
-          </p>
+          <h2>{t.companies.ninetyNine.about.title}</h2>
+          <p>{t.companies.ninetyNine.about.description}</p>
           <div className={styles.details}>
             <div className={styles.detailItem}>
-              <h3>Cargo</h3>
+              <h3>{t.companies.ninetyNine.about.role}</h3>
               <p>Software Engineer</p>
             </div>
             <div className={styles.detailItem}>
-              <h3>Período</h3>
-              <PeriodDisplay startDate="2024-02-01" />
+              <h3>{t.companies.ninetyNine.about.period}</h3>
+              <PeriodDisplay startDate="2023-08-01" endDate="2024-01-31" />
             </div>
             <div className={styles.detailItem}>
-              <h3>Localização</h3>
+              <h3>{t.companies.ninetyNine.about.location}</h3>
               <p>São Paulo, SP - (Home Office)</p>
             </div>
           </div>
         </div>
       </section>
 
-   
-
       {/* Galeria */}
       <section className={styles.gallery}>
         <div className={styles.container}>
-          <h2>Galeria</h2>
+          <h2>{t.companies.ninetyNine.gallery.title}</h2>
           <div className={styles.galleryGrid}>
             {GALLERY_IMAGES.map((image, index) => (
               <div key={index} className={styles.galleryItem}>
                 <Image
                   src={image.src}
-                  alt={image.alt}
+                  alt={t.companies.ninetyNine.gallery.images[image.alt as keyof typeof t.companies.ninetyNine.gallery.images]}
                   width={400}
                   height={300}
                   className={styles.galleryImage}
                 />
-                <div className={styles.playOverlay}>
-                  <svg 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24" 
-                    fill="none"
-                  >
-                    <path 
-                      d="M8 5v14l11-7L8 5z" 
-                      fill="currentColor"
-                    />
-                  </svg>
-                </div>
               </div>
             ))}
           </div>

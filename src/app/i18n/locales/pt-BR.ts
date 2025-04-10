@@ -121,6 +121,27 @@ export const ptBR: Translation = {
           event: 'Evento da empresa'
         }
       }
+    },
+    ninetyNine: {
+      title: '99 Freelas',
+      description: 'Desenvolvimento de software como freelancer na maior plataforma de freelancers do Brasil.',
+      learnMore: 'Saiba mais',
+      slogan: 'Conectando talentos e oportunidades.',
+      about: {
+        title: 'Sobre a 99 Freelas',
+        description: 'A 99 Freelas é a maior plataforma de freelancers do Brasil, conectando profissionais e empresas em projetos de tecnologia e desenvolvimento de software.',
+        role: 'Cargo',
+        period: 'Período',
+        location: 'Localização'
+      },
+      gallery: {
+        title: 'Galeria',
+        images: {
+          workspace: 'Espaço de trabalho',
+          team: 'Time da empresa',
+          event: 'Evento da empresa'
+        }
+      }
     }
   },
   gallery: {

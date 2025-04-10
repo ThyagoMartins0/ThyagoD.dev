@@ -106,6 +106,27 @@ export type Translation = {
         };
       };
     };
+    ninetyNine: {
+      title: string;
+      description: string;
+      learnMore: string;
+      slogan: string;
+      about: {
+        title: string;
+        description: string;
+        role: string;
+        period: string;
+        location: string;
+      };
+      gallery: {
+        title: string;
+        images: {
+          workspace: string;
+          team: string;
+          event: string;
+        };
+      };
+    };
   };
   gallery: {
     title: string;

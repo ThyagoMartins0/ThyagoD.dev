@@ -119,6 +119,27 @@ export const en: Translation = {
           event: "Company event"
         }
       }
+    },
+    ninetyNine: {
+      title: "99 Freelas",
+      description: "Software development as a freelancer on Brazil's largest freelance platform.",
+      learnMore: "Learn More",
+      slogan: "Connecting talent and opportunities.",
+      about: {
+        title: "About 99 Freelas",
+        description: "99 Freelas is Brazil's largest freelance platform, connecting professionals and companies in technology and software development projects.",
+        role: "Role",
+        period: "Period",
+        location: "Location"
+      },
+      gallery: {
+        title: "Gallery",
+        images: {
+          workspace: "Workspace",
+          team: "Company team",
+          event: "Company event"
+        }
+      }
     }
   },
   gallery: {
