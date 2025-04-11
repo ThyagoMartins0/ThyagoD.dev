@@ -116,7 +116,7 @@ export const en: Translation = {
         images: {
           workspace: "Workspace",
           team: "Company team",
-          event: "Company event"
+          school: "Company event"
         }
       }
     },
