@@ -116,7 +116,7 @@ export const es: Translation = {
         images: {
           workspace: 'Espacio de trabajo',
           team: 'Equipo de la empresa',
-          event: 'Evento de la empresa'
+          school: 'Evento de la empresa'
         }
       }
     },
