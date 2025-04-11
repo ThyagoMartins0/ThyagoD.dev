@@ -26,8 +26,8 @@ const GALLERY_IMAGES: GalleryImage[] = [
 const PROJECTS = [
   {
     title: 'Plataforma de jogos online',
-    description: 'Desenvolvimento de aplição laravel, voltado para escola de cursos, com sistema de login, cadastro de alunos, professores, cursos, aulas entre os varios setores da empresa e descontos para os alunos, com sistema de pagamento e gerenciamento de financeiro.',
-    technologies: ['Laravel', 'Php', 'Filament', 'Mysql', 'Docker', 'AWS', 'Terraform'],
+    description: 'Responsavel pela manutenção de plataforma de jogos onlines, integração de meios finaceiros como stripe, integração com api de jogos, gerenciamento de usuarios, criação de novos jogos, responsavel end to end, desde o desenvolvimento ou manutenção até o deploy no cliente',
+    technologies: ['Laravel', 'Php', 'vue', 'Mysql', 'Docker', 'VPN', 'Dokploy', 'filament','scala'],
     role: 'Desenvolvedor Fullstack',
     responsibilities: [
       'Desenvolvimento de aplicações web e mobile',
@@ -35,35 +35,39 @@ const PROJECTS = [
       'Desenvolvimento de interfaces responsivas',
       'Testes automatizados e garantia de qualidade',
       'Documentação técnica e de usuário',
-      'Gestão de projetos e comunicação com clientes',
-      'Plataforma que continua videos para os alunos',
-      'Sistema de gerenciamento de financeiro',
-      'Sistema de gerenciamento de alunos, professores e cursos',
-      'Sistema de gerenciamento de aulas',
-      'Sistema de gerenciamento de pagamentos',      
+      'integração com api de jogos',
+      'integração com meios de pagamento',
+      'deploy em vpn',
+      'criação de paines para gerenciamento de banco e sistema ',   
     ],
     highlights: [
       'Desenvolvimento de aplicações com alta performance e escalabilidade',
-      'Implementação de boas práticas de desenvolvimento e arquitetura limpa',
+      'rapida velocidade de desenvolvimento',
       'Experiência com diferentes tecnologias e frameworks',
       'Trabalho remoto e gestão de tempo eficiente',
-      'Comunicação clara e profissional com clientes'
     ]
   },
   {
     title: 'Plataforma de geração de relatórios e leads com IA ',
-    description: 'Desemvolvimento de paginas em wordpress,e-commerce, com sistema de login, cadastro de clientes, produtos, pedidos, pagamentos, entre outros setores da empresa.',
-    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
-    role: 'Desenvolvedor php / wordpress',
+    description: 'Sistema interno para criação de leads e geração de relatórios com IA baseado em informações de clientes e texto entregues atraves do copywriter,   o sistema é capaz de gerar textos atraves de ia treinada para ler arquivos, fazer calculos e entregar um texto com as informações coletadas, enviar relatorios para o cliente',
+    technologies: ['Laravel', 'Php', 'Mysql', 'Inteligencia Artificial', 'Python', 'vue','javascript', 'Docker', 'AWS', 'VPN'],
+    role: 'Desenvolvedor Fullstack com foco em Backend',
     responsibilities: [
       'Desenvolvimento de aplicações web e mobile',
       'Implementação segura de login e cadastro de clientes',
+      'Sistema anti-sql injection',
       'Integração com bancos de dados e serviços externos',
-      'Integrar sistema da loja ao wordpress',
-      'garantir a segurança e a performance da loja',
+      'criação de paines para gerenciamento de banco e sistema ',
+      'treinamento de IA',
+      'teste integrados com junit '
+
     ],
     highlights: [
-      'com essa loja a cliente pode melhorar ainda mais suas vendas e atendimento aos clientes, começando assim a fazer vendas mais faceis e com mais segurança',
+      'Com esse projeto o cliente foi capaz de fazer o mesmo relatorio que costumava demorar cerca de 10 dias, agora me 1 hora',
+      'sistema de aprendizado continua da ia treinada, para que a cada novo cliente o sistema seja capaz de gerar um relatorio mais acurado',
+       'implementação de dashboard nativos do sistema para que o cliente possa ter uma visão geral do sistema e dos dados',
+       'sistema end to end, desde o desenvolvimento e melhorias até o deploy no cliente',
+
     ]
   }, { 
     title: 'Sistema de bingo para jogos online',
