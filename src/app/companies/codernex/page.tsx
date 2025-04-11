@@ -2,8 +2,6 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
-import PeriodDisplay from '@/app/components/PeriodDisplay'
-import { useLanguage } from '@/app/i18n/LanguageContext';
 
 type GalleryImage = {
   src: string;
@@ -185,8 +183,6 @@ const PROJECTS = [
 ];
 
 export default function CodernexPage() {
-  const { t } = useLanguage();
-  
   return (
     <main className={styles.main}>
       {/* Banner */}
