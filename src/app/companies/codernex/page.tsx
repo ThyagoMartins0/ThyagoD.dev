@@ -59,7 +59,7 @@ const PROJECTS = [
       'Integração com bancos de dados e serviços externos',
       'criação de paines para gerenciamento de banco e sistema ',
       'treinamento de IA',
-      'teste integrados com junit '
+      'teste integrados com junit parei aqui'
 
     ],
     highlights: [
@@ -71,13 +71,18 @@ const PROJECTS = [
     ]
   }, { 
     title: 'Sistema de bingo para jogos online',
-    description: 'landing page para cursos de desenvolvimento da mulher, focado em consultoria feminina ',
-    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
-    role: 'Desenvolvedor php / wordpress',
+    description: 'Manutenção de jogo de bingo online, com sistema de pagamento e integração de novas ferramentas no painel de administração',
+    technologies: ['laravel', 'php 8', 'mysql', 'vue', 'docker', 'vpn', 'dokploy', 'crons','python', 'javascript', 'mvc','devops'],
+    role: 'Desenvolvedor Fullstack ',
     responsibilities: [
       'Desenvolvimento de aplicações web e mobile',
       'Integração com bancos de dados e serviços externos',
       'garantir a segurança',
+      'manutenção de jogo de bingo online',
+      'integração de novas ferramentas no painel de administração',
+      
+      
+
     ],
     highlights: [
       '',
