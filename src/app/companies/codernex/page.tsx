@@ -1,22 +1,192 @@
+'use client';
+
 import Image from 'next/image'
 import styles from './page.module.css'
+import PeriodDisplay from '@/app/components/PeriodDisplay'
+import { useLanguage } from '@/app/i18n/LanguageContext';
 
-const GALLERY_IMAGES = [
+type GalleryImage = {
+  src: string;
+  alt: 'workspace' | 'team' | 'school';
+};
+
+const GALLERY_IMAGES: GalleryImage[] = [
   {
-    src: '/companies/mutant/gallery/team.jpg',
-    alt: 'Espaço de trabalho'
+    src: '/companies/codernex/image/team.jpg',
+    alt: 'workspace'
   },
   {
-    src: '/companies/mutant/gallery/team.jpg',
-    alt: 'Time da empresa'
+    src: '/companies/codernex/image/team.jpg',
+    alt: 'team'
   },
   {
-    src: '/companies/mutant/gallery/event.jpg',
-    alt: 'Evento da empresa'
+    src: '/companies/codernex/image/event.jpg',
+    alt: 'school'
   }
-]
+];
 
-export default function MutantPage() {
+const PROJECTS = [
+  {
+    title: 'Plataforma de jogos online',
+    description: 'Desenvolvimento de aplição laravel, voltado para escola de cursos, com sistema de login, cadastro de alunos, professores, cursos, aulas entre os varios setores da empresa e descontos para os alunos, com sistema de pagamento e gerenciamento de financeiro.',
+    technologies: ['Laravel', 'Php', 'Filament', 'Mysql', 'Docker', 'AWS', 'Terraform'],
+    role: 'Desenvolvedor Fullstack',
+    responsibilities: [
+      'Desenvolvimento de aplicações web e mobile',
+      'Integração com bancos de dados e serviços externos',
+      'Desenvolvimento de interfaces responsivas',
+      'Testes automatizados e garantia de qualidade',
+      'Documentação técnica e de usuário',
+      'Gestão de projetos e comunicação com clientes',
+      'Plataforma que continua videos para os alunos',
+      'Sistema de gerenciamento de financeiro',
+      'Sistema de gerenciamento de alunos, professores e cursos',
+      'Sistema de gerenciamento de aulas',
+      'Sistema de gerenciamento de pagamentos',      
+    ],
+    highlights: [
+      'Desenvolvimento de aplicações com alta performance e escalabilidade',
+      'Implementação de boas práticas de desenvolvimento e arquitetura limpa',
+      'Experiência com diferentes tecnologias e frameworks',
+      'Trabalho remoto e gestão de tempo eficiente',
+      'Comunicação clara e profissional com clientes'
+    ]
+  },
+  {
+    title: 'Plataforma de geração de relatórios e leads com IA ',
+    description: 'Desemvolvimento de paginas em wordpress,e-commerce, com sistema de login, cadastro de clientes, produtos, pedidos, pagamentos, entre outros setores da empresa.',
+    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
+    role: 'Desenvolvedor php / wordpress',
+    responsibilities: [
+      'Desenvolvimento de aplicações web e mobile',
+      'Implementação segura de login e cadastro de clientes',
+      'Integração com bancos de dados e serviços externos',
+      'Integrar sistema da loja ao wordpress',
+      'garantir a segurança e a performance da loja',
+    ],
+    highlights: [
+      'com essa loja a cliente pode melhorar ainda mais suas vendas e atendimento aos clientes, começando assim a fazer vendas mais faceis e com mais segurança',
+    ]
+  }, { 
+    title: 'Sistema de bingo para jogos online',
+    description: 'landing page para cursos de desenvolvimento da mulher, focado em consultoria feminina ',
+    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
+    role: 'Desenvolvedor php / wordpress',
+    responsibilities: [
+      'Desenvolvimento de aplicações web e mobile',
+      'Integração com bancos de dados e serviços externos',
+      'garantir a segurança',
+    ],
+    highlights: [
+      '',
+    ]
+  },
+  {
+    title: 'Plataforma de iptv para canais de tv',
+    description: 'landing page para curso de copywriter, focado em cursos de copywriter',
+    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
+    role: 'Desenvolvedor Fullstack',
+    responsibilities: [
+      'Desenvolvimento de aplicações web e mobile',
+      'Integração com bancos de dados e serviços externos para dados vindos de forms',
+      'Desenvolvimento de interfaces responsivas',
+      'Testes automatizados e garantia de qualidade',
+    ],
+    highlights: [
+      'Desenvolvimento de aplicações com alta performance e escalabilidade',
+      'Trabalho com tempo curto ',
+      'Trabalho remoto e gestão de tempo eficiente',
+    ]
+  }, {
+    title: 'Sistema de gerenciamento de materia para conteudo escolar ',
+    description: 'landing page para curso de copywriter, focado em cursos de copywriter',
+    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
+    role: 'Desenvolvedor Fullstack',
+    responsibilities: [
+      'Desenvolvimento de aplicações web e mobile',
+      'Integração com bancos de dados e serviços externos para dados vindos de forms',
+      'Desenvolvimento de interfaces responsivas',
+      'Testes automatizados e garantia de qualidade',
+    ],
+    highlights: [
+      'Desenvolvimento de aplicações com alta performance e escalabilidade',
+      'Trabalho com tempo curto ',
+      'Trabalho remoto e gestão de tempo eficiente',
+    ]
+  },
+  {
+    title: 'Site governamental ',
+    description: 'landing page para curso de copywriter, focado em cursos de copywriter',
+    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
+    role: 'Desenvolvedor Fullstack',
+    responsibilities: [
+      'Desenvolvimento de aplicações web e mobile',
+      'Integração com bancos de dados e serviços externos para dados vindos de forms',
+      'Desenvolvimento de interfaces responsivas',
+      'Testes automatizados e garantia de qualidade',
+    ],
+    highlights: [
+      'Desenvolvimento de aplicações com alta performance e escalabilidade',
+      'Trabalho com tempo curto ',
+      'Trabalho remoto e gestão de tempo eficiente',
+    ]
+  },
+  {
+    title: 'Site sidical ',
+    description: 'landing page para curso de copywriter, focado em cursos de copywriter',
+    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
+    role: 'Desenvolvedor Fullstack',
+    responsibilities: [
+      'Desenvolvimento de aplicações web e mobile',
+      'Integração com bancos de dados e serviços externos para dados vindos de forms',
+      'Desenvolvimento de interfaces responsivas',
+      'Testes automatizados e garantia de qualidade',
+    ],
+    highlights: [
+      'Desenvolvimento de aplicações com alta performance e escalabilidade',
+      'Trabalho com tempo curto ',
+      'Trabalho remoto e gestão de tempo eficiente',
+    ]
+  },
+  {
+    title: 'Site de leilão esportivo ',
+    description: 'landing page para curso de copywriter, focado em cursos de copywriter',
+    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
+    role: 'Desenvolvedor Fullstack',
+    responsibilities: [
+      'Desenvolvimento de aplicações web e mobile',
+      'Integração com bancos de dados e serviços externos para dados vindos de forms',
+      'Desenvolvimento de interfaces responsivas',
+      'Testes automatizados e garantia de qualidade',
+    ],
+    highlights: [
+      'Desenvolvimento de aplicações com alta performance e escalabilidade',
+      'Trabalho com tempo curto ',
+      'Trabalho remoto e gestão de tempo eficiente',
+    ]
+  },
+  {
+    title: 'Site de leilão esportivo ',
+    description: 'landing page para curso de copywriter, focado em cursos de copywriter',
+    technologies: ['Wordpress', 'Php', 'Woocommerce', 'Mysql'],
+    role: 'Desenvolvedor Fullstack',
+    responsibilities: [
+      'Desenvolvimento de aplicações web e mobile',
+      'Integração com bancos de dados e serviços externos para dados vindos de forms',
+      'Desenvolvimento de interfaces responsivas',
+      'Testes automatizados e garantia de qualidade',
+    ],
+    highlights: [
+      'Desenvolvimento de aplicações com alta performance e escalabilidade',
+      'Trabalho com tempo curto ',
+      'Trabalho remoto e gestão de tempo eficiente',
+    ]
+  }
+];
+
+export default function CodernexPage() {
+  const { t } = useLanguage();
+  
   return (
     <main className={styles.main}>
       {/* Banner */}
@@ -43,12 +213,12 @@ export default function MutantPage() {
         </div>
       </section>
 
-      {/* Descrição */}
+      {/* Description */}
       <section className={styles.description}>
         <div className={styles.container}>
           <h2>Sobre a Empresa</h2>
           <p>
-            A Mutant é uma empresa inovadora focada em desenvolvimento de software
+            A Codernex é uma empresa inovadora focada em desenvolvimento de software
             e soluções tecnológicas. Com uma cultura única e um ambiente dinâmico,
             buscamos constantemente novos desafios e oportunidades de crescimento.
           </p>
@@ -69,34 +239,61 @@ export default function MutantPage() {
         </div>
       </section>
 
-      {/* Recomendações */}
-      <section className={styles.recommendations}>
+      {/* Projects */}
+      <section className={styles.projects}>
         <div className={styles.container}>
-          <h2>Recomendações</h2>
-          <div className={styles.recommendationCard}>
-            <div className={styles.recommendationHeader}>
-              <Image
-                src="/companies/mutant/image/recomendagabriel.jpg"
-                alt="Foto do recomendante"
-                width={60}
-                height={60}
-                className={styles.recommendationImage}
-              />
-              <div>
-                <h3>Gabriel Nunes</h3>
-                <p>Arquiteto de software | Java Developer | Springboot | Postgresql | Game dev</p>
-              </div>
-            </div>
-            <blockquote>
-              &ldquo;Thyago é um desenvolvedor excepcional, sempre buscando evoluir e aprimorar suas habilidades. Ele demonstra um compromisso genuíno com a melhoria contínua, solicitando feedbacks constantes para aperfeiçoar seu trabalho e entregar sempre o melhor resultado possível.
+          <h2>Projetos</h2>
+          <div className={styles.projectsGrid}>
+            {PROJECTS.map((project, index) => (
+              <div key={index} className={styles.projectCard}>
+                <div className={styles.projectHeader}>
+                  <div className={styles.projectTitle}>
+                    <h3>{project.title}</h3>
+                    <span className={styles.role}>{project.role}</span>
+                  </div>
+                </div>
 
-Além de sua capacidade técnica, Thyago se destaca pela proatividade e dedicação, mostrando-se sempre atento a novas formas de otimizar processos e contribuir para o sucesso da equipe. Trabalhar com ele é ter a certeza de contar com um profissional comprometido e em constante crescimento. Recomendo fortemente seu trabalho!&rdquo;
-            </blockquote>
+                <p className={styles.projectDescription}>{project.description}</p>
+
+                <div className={styles.projectContent}>
+                  <div className={styles.projectMain}>
+                    <div className={styles.responsibilities}>
+                      <h4>Responsabilidades</h4>
+                      <ul>
+                        {project.responsibilities.map((responsibility, i) => (
+                          <li key={i}>{responsibility}</li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className={styles.highlights}>
+                      <h4>Destaques</h4>
+                      <ul>
+                        {project.highlights.map((highlight, i) => (
+                          <li key={i}>{highlight}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className={styles.projectSidebar}>
+                    <div className={styles.technologies}>
+                      <h4>Tecnologias</h4>
+                      <div className={styles.techTags}>
+                        {project.technologies.map((tech, i) => (
+                          <span key={i} className={styles.techTag}>{tech}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Galeria */}
+      {/* Gallery */}
       <section className={styles.gallery}>
         <div className={styles.container}>
           <h2>Galeria</h2>
@@ -110,24 +307,11 @@ Além de sua capacidade técnica, Thyago se destaca pela proatividade e dedicaç
                   height={300}
                   className={styles.galleryImage}
                 />
-                <div className={styles.playOverlay}>
-                  <svg 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24" 
-                    fill="none"
-                  >
-                    <path 
-                      d="M8 5v14l11-7L8 5z" 
-                      fill="currentColor"
-                    />
-                  </svg>
-                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
     </main>
-  )
+  );
 } 

@@ -102,7 +102,7 @@ export type Translation = {
         images: {
           workspace: string;
           team: string;
-          event: string;
+          school: string;
         };
       };
     };
@@ -123,21 +123,21 @@ export type Translation = {
         responsibilities: string;
         highlights: string;
         technologies: string;
-        freelance: {
+        items: Array<{
           title: string;
           description: string;
-          period: string;
+          technologies: string[];
           role: string;
-          responsibilities: readonly string[];
-          highlights: readonly string[];
-        };
+          responsibilities: string[];
+          highlights: string[];
+        }>;
       };
       gallery: {
         title: string;
         images: {
           workspace: string;
           team: string;
-          event: string;
+          school: string;
         };
       };
     };

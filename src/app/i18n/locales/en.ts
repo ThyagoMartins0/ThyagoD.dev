@@ -137,35 +137,95 @@ export const en: Translation = {
         responsibilities: "Responsibilities",
         highlights: "Highlights",
         technologies: "Technologies",
-        freelance: {
-          title: "Freelance Development",
-          description: "Development of various projects as a freelancer, working with different technologies and frameworks. Each project was an opportunity to learn new skills and apply knowledge in different contexts.",
-          period: "August 2023 - January 2024",
-          role: "Fullstack Developer",
-          responsibilities: [
-            "Development of web and mobile applications",
-            "Implementation of RESTful APIs",
-            "Integration with databases and external services",
-            "Development of responsive interfaces",
-            "Automated testing and quality assurance",
-            "Technical and user documentation",
-            "Project management and client communication"
-          ],
-          highlights: [
-            "Development of high-performance and scalable applications",
-            "Implementation of development best practices and clean architecture",
-            "Experience with different technologies and frameworks",
-            "Remote work and efficient time management",
-            "Clear and professional communication with clients"
-          ]
-        }
+        items: [
+          {
+            title: "Course School Website",
+            description: "Development of a Laravel application for a course school, with login system, student registration, teachers, courses, classes, and financial management.",
+            technologies: ["Laravel", "PHP", "Filament", "MySQL", "Docker", "AWS", "Terraform"],
+            role: "Fullstack Developer",
+            responsibilities: [
+              "Development of web and mobile applications",
+              "Integration with databases and external services",
+              "Development of responsive interfaces",
+              "Automated testing and quality assurance",
+              "Technical and user documentation",
+              "Project management and client communication",
+              "Video platform for students",
+              "Financial management system",
+              "Student, teacher, and course management system",
+              "Class management system",
+              "Payment management system"
+            ],
+            highlights: [
+              "Development of high-performance and scalable applications",
+              "Implementation of clean development practices and architecture",
+              "Experience with different technologies and frameworks",
+              "Remote work and efficient time management",
+              "Clear and professional client communication"
+            ]
+          },
+          {
+            title: "Clothing Store E-commerce",
+            description: "Development of WordPress pages, e-commerce, with login system, customer registration, products, orders, and payments.",
+            technologies: ["WordPress", "PHP", "WooCommerce", "MySQL"],
+            role: "PHP / WordPress Developer",
+            responsibilities: [
+              "Development of web and mobile applications",
+              "Secure implementation of login and customer registration",
+              "Integration with databases and external services",
+              "Integration of store system with WordPress",
+              "Ensuring store security and performance"
+            ],
+            highlights: [
+              "The store allows improving sales and customer service, facilitating sales with greater security"
+            ]
+          },
+          {
+            title: "Landing Page for Female Consulting",
+            description: "Development of WordPress pages, e-commerce, with login system, customer registration, products, orders, and payments.",
+            technologies: ["WordPress", "PHP", "WooCommerce", "MySQL"],
+            role: "PHP / WordPress Developer",
+            responsibilities: [
+              "Development of web and mobile applications",
+              "Secure implementation of login and customer registration",
+              "Integration with databases and external services",
+              "Integration of store system with WordPress",
+              "Ensuring store security and performance"
+            ],
+            highlights: [
+              "The store allows improving sales and customer service, facilitating sales with greater security"
+            ]
+          },
+          {
+            title: "Freelance Development",
+            description: "Development of various projects as a freelancer, working with different technologies and frameworks.",
+            technologies: ["React", "Node.js", "TypeScript", "Next.js", "MongoDB", "PostgreSQL", "Docker", "AWS"],
+            role: "Fullstack Developer",
+            responsibilities: [
+              "Development of web and mobile applications",
+              "RESTful API implementation",
+              "Integration with databases and external services",
+              "Development of responsive interfaces",
+              "Automated testing and quality assurance",
+              "Technical and user documentation",
+              "Project management and client communication"
+            ],
+            highlights: [
+              "Development of high-performance and scalable applications",
+              "Implementation of clean development practices and architecture",
+              "Experience with different technologies and frameworks",
+              "Remote work and efficient time management",
+              "Clear and professional client communication"
+            ]
+          }
+        ]
       },
       gallery: {
         title: "Gallery",
         images: {
           workspace: "Workspace",
-          team: "Company team",
-          event: "Company event"
+          team: "Team",
+          school: "School"
         }
       }
     }

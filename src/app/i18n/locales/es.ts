@@ -137,35 +137,95 @@ export const es: Translation = {
         responsibilities: 'Responsabilidades',
         highlights: 'Destacados',
         technologies: 'Tecnologías',
-        freelance: {
-          title: 'Desarrollo Freelance',
-          description: 'Desarrollo de diversos proyectos como freelancer, trabajando con diferentes tecnologías y frameworks. Cada proyecto fue una oportunidad para aprender nuevas habilidades y aplicar conocimientos en diferentes contextos.',
-          period: 'Agosto 2023 - Enero 2024',
-          role: 'Desarrollador Fullstack',
-          responsibilities: [
-            'Desarrollo de aplicaciones web y móviles',
-            'Implementación de APIs RESTful',
-            'Integración con bases de datos y servicios externos',
-            'Desarrollo de interfaces responsivas',
-            'Pruebas automatizadas y garantía de calidad',
-            'Documentación técnica y de usuario',
-            'Gestión de proyectos y comunicación con clientes'
-          ],
-          highlights: [
-            'Desarrollo de aplicaciones con alto rendimiento y escalabilidad',
-            'Implementación de buenas prácticas de desarrollo y arquitectura limpia',
-            'Experiencia con diferentes tecnologías y frameworks',
-            'Trabajo remoto y gestión eficiente del tiempo',
-            'Comunicación clara y profesional con clientes'
-          ]
-        }
+        items: [
+          {
+            title: 'Sitio para escuela de cursos',
+            description: 'Desarrollo de aplicación Laravel para escuela de cursos, con sistema de login, registro de estudiantes, profesores, cursos, clases y gestión financiera.',
+            technologies: ['Laravel', 'PHP', 'Filament', 'MySQL', 'Docker', 'AWS', 'Terraform'],
+            role: 'Desarrollador Fullstack',
+            responsibilities: [
+              'Desarrollo de aplicaciones web y móviles',
+              'Integración con bases de datos y servicios externos',
+              'Desarrollo de interfaces responsivas',
+              'Pruebas automatizadas y garantía de calidad',
+              'Documentación técnica y de usuario',
+              'Gestión de proyectos y comunicación con clientes',
+              'Plataforma de videos para estudiantes',
+              'Sistema de gestión financiera',
+              'Sistema de gestión de estudiantes, profesores y cursos',
+              'Sistema de gestión de clases',
+              'Sistema de gestión de pagos'
+            ],
+            highlights: [
+              'Desarrollo de aplicaciones con alto rendimiento y escalabilidad',
+              'Implementación de buenas prácticas de desarrollo y arquitectura limpia',
+              'Experiencia con diferentes tecnologías y frameworks',
+              'Trabajo remoto y gestión eficiente del tiempo',
+              'Comunicación clara y profesional con clientes'
+            ]
+          },
+          {
+            title: 'E-commerce para tienda de ropa',
+            description: 'Desarrollo de páginas en WordPress, e-commerce, con sistema de login, registro de clientes, productos, pedidos y pagos.',
+            technologies: ['WordPress', 'PHP', 'WooCommerce', 'MySQL'],
+            role: 'Desarrollador PHP / WordPress',
+            responsibilities: [
+              'Desarrollo de aplicaciones web y móviles',
+              'Implementación segura de login y registro de clientes',
+              'Integración con bases de datos y servicios externos',
+              'Integración del sistema de la tienda con WordPress',
+              'Garantía de seguridad y rendimiento de la tienda'
+            ],
+            highlights: [
+              'La tienda permite mejorar las ventas y la atención al cliente, facilitando las ventas con mayor seguridad'
+            ]
+          },
+          {
+            title: 'Landing page para consultoría femenina',
+            description: 'Desarrollo de páginas en WordPress, e-commerce, con sistema de login, registro de clientes, productos, pedidos y pagos.',
+            technologies: ['WordPress', 'PHP', 'WooCommerce', 'MySQL'],
+            role: 'Desarrollador PHP / WordPress',
+            responsibilities: [
+              'Desarrollo de aplicaciones web y móviles',
+              'Implementación segura de login y registro de clientes',
+              'Integración con bases de datos y servicios externos',
+              'Integración del sistema de la tienda con WordPress',
+              'Garantía de seguridad y rendimiento de la tienda'
+            ],
+            highlights: [
+              'La tienda permite mejorar las ventas y la atención al cliente, facilitando las ventas con mayor seguridad'
+            ]
+          },
+          {
+            title: 'Desarrollo Freelancer',
+            description: 'Desarrollo de diversos proyectos como freelancer, trabajando con diferentes tecnologías y frameworks.',
+            technologies: ['React', 'Node.js', 'TypeScript', 'Next.js', 'MongoDB', 'PostgreSQL', 'Docker', 'AWS'],
+            role: 'Desarrollador Fullstack',
+            responsibilities: [
+              'Desarrollo de aplicaciones web y móviles',
+              'Implementación de APIs RESTful',
+              'Integración con bases de datos y servicios externos',
+              'Desarrollo de interfaces responsivas',
+              'Pruebas automatizadas y garantía de calidad',
+              'Documentación técnica y de usuario',
+              'Gestión de proyectos y comunicación con clientes'
+            ],
+            highlights: [
+              'Desarrollo de aplicaciones con alto rendimiento y escalabilidad',
+              'Implementación de buenas prácticas de desarrollo y arquitectura limpia',
+              'Experiencia con diferentes tecnologías y frameworks',
+              'Trabajo remoto y gestión eficiente del tiempo',
+              'Comunicación clara y profesional con clientes'
+            ]
+          }
+        ]
       },
       gallery: {
         title: 'Galería',
         images: {
           workspace: 'Espacio de trabajo',
-          team: 'Equipo de la empresa',
-          event: 'Evento de la empresa'
+          team: 'Equipo',
+          school: 'Escuela'
         }
       }
     }

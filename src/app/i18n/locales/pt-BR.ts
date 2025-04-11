@@ -118,7 +118,7 @@ export const ptBR: Translation = {
         images: {
           workspace: 'Espaço de trabalho',
           team: 'Time da empresa',
-          event: 'Evento da empresa'
+          school: 'Escola'
         }
       }
     },
@@ -126,7 +126,7 @@ export const ptBR: Translation = {
       title: '99 Freelas',
       description: 'Desenvolvimento de software como freelancer na maior plataforma de freelancers do Brasil.',
       learnMore: 'Saiba mais',
-      slogan: 'Conectando talentos e oportunidades.',
+      slogan: '99 Freelas',
       about: {
         title: 'Sobre a 99 Freelas',
         description: 'A 99 Freelas é a maior plataforma de freelancers do Brasil, conectando profissionais e empresas em projetos de tecnologia e desenvolvimento de software.',
@@ -139,35 +139,95 @@ export const ptBR: Translation = {
         responsibilities: 'Responsabilidades',
         highlights: 'Destaques',
         technologies: 'Tecnologias',
-        freelance: {
-          title: 'Desenvolvimento Freelancer',
-          description: 'Desenvolvimento de diversos projetos como freelancer, trabalhando com diferentes tecnologias e frameworks. Cada projeto foi uma oportunidade de aprender novas habilidades e aplicar conhecimentos em diferentes contextos.',
-          period: 'Agosto 2023 - Janeiro 2024',
-          role: 'Desenvolvedor Fullstack',
-          responsibilities: [
-            'Desenvolvimento de aplicações web e mobile',
-            'Implementação de APIs RESTful',
-            'Integração com bancos de dados e serviços externos',
-            'Desenvolvimento de interfaces responsivas',
-            'Testes automatizados e garantia de qualidade',
-            'Documentação técnica e de usuário',
-            'Gestão de projetos e comunicação com clientes'
-          ],
-          highlights: [
-            'Desenvolvimento de aplicações com alta performance e escalabilidade',
-            'Implementação de boas práticas de desenvolvimento e arquitetura limpa',
-            'Experiência com diferentes tecnologias e frameworks',
-            'Trabalho remoto e gestão de tempo eficiente',
-            'Comunicação clara e profissional com clientes'
-          ]
-        }
+        items: [
+          {
+            title: "Site para escola de cursos",
+            description: "Desenvolvimento de aplicação Laravel para escola de cursos, com sistema de login, cadastro de alunos, professores, cursos, aulas e gestão financeira.",
+            technologies: ["Laravel", "PHP", "Filament", "MySQL", "Docker", "AWS", "Terraform"],
+            role: "Desenvolvedor Fullstack",
+            responsibilities: [
+              "Desenvolvimento de aplicações web e mobile",
+              "Integração com bancos de dados e serviços externos",
+              "Desenvolvimento de interfaces responsivas",
+              "Testes automatizados e garantia de qualidade",
+              "Documentação técnica e de usuário",
+              "Gestão de projetos e comunicação com clientes",
+              "Plataforma de vídeos para alunos",
+              "Sistema de gestão financeira",
+              "Sistema de gestão de alunos, professores e cursos",
+              "Sistema de gestão de aulas",
+              "Sistema de gestão de pagamentos"
+            ],
+            highlights: [
+              "Desenvolvimento de aplicações com alta performance e escalabilidade",
+              "Implementação de boas práticas de desenvolvimento e arquitetura limpa",
+              "Experiência com diferentes tecnologias e frameworks",
+              "Trabalho remoto e gestão eficiente de tempo",
+              "Comunicação clara e profissional com clientes"
+            ]
+          },
+          {
+            title: "E-commerce para loja de roupas",
+            description: "Desenvolvimento de páginas em WordPress, e-commerce, com sistema de login, cadastro de clientes, produtos, pedidos e pagamentos.",
+            technologies: ["WordPress", "PHP", "WooCommerce", "MySQL"],
+            role: "Desenvolvedor PHP / WordPress",
+            responsibilities: [
+              "Desenvolvimento de aplicações web e mobile",
+              "Implementação segura de login e cadastro de clientes",
+              "Integração com bancos de dados e serviços externos",
+              "Integração do sistema da loja com WordPress",
+              "Garantia de segurança e performance da loja"
+            ],
+            highlights: [
+              "A loja permite melhorar as vendas e o atendimento ao cliente, facilitando as vendas com maior segurança"
+            ]
+          },
+          {
+            title: "Landing page para consultoria feminina",
+            description: "Desenvolvimento de páginas em WordPress, e-commerce, com sistema de login, cadastro de clientes, produtos, pedidos e pagamentos.",
+            technologies: ["WordPress", "PHP", "WooCommerce", "MySQL"],
+            role: "Desenvolvedor PHP / WordPress",
+            responsibilities: [
+              "Desenvolvimento de aplicações web e mobile",
+              "Implementação segura de login e cadastro de clientes",
+              "Integração com bancos de dados e serviços externos",
+              "Integração do sistema da loja com WordPress",
+              "Garantia de segurança e performance da loja"
+            ],
+            highlights: [
+              "A loja permite melhorar as vendas e o atendimento ao cliente, facilitando as vendas com maior segurança"
+            ]
+          },
+          {
+            title: "Desenvolvimento Freelancer",
+            description: "Desenvolvimento de diversos projetos como freelancer, trabalhando com diferentes tecnologias e frameworks.",
+            technologies: ["React", "Node.js", "TypeScript", "Next.js", "MongoDB", "PostgreSQL", "Docker", "AWS"],
+            role: "Desenvolvedor Fullstack",
+            responsibilities: [
+              "Desenvolvimento de aplicações web e mobile",
+              "Implementação de APIs RESTful",
+              "Integração com bancos de dados e serviços externos",
+              "Desenvolvimento de interfaces responsivas",
+              "Testes automatizados e garantia de qualidade",
+              "Documentação técnica e de usuário",
+              "Gestão de projetos e comunicação com clientes"
+            ],
+            highlights: [
+              "Desenvolvimento de aplicações com alta performance e escalabilidade",
+              "Implementação de boas práticas de desenvolvimento e arquitetura limpa",
+              "Experiência com diferentes tecnologias e frameworks",
+              "Trabalho remoto e gestão eficiente de tempo",
+              "Comunicação clara e profissional com clientes"
+            ]
+          }
+        ]
       },
       gallery: {
         title: 'Galeria',
         images: {
           workspace: 'Espaço de trabalho',
           team: 'Time da empresa',
-          event: 'Evento da empresa'
+          school: 'Escola'
         }
       }
     }
