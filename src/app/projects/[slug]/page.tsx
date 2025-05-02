@@ -36,8 +36,8 @@ Este projeto demonstra não apenas o domínio técnico em Java e Spring, mas tam
       }
     ]
   },
-  'portfolio': {
-    title: 'Portfolio',
+  'financeiroai': {
+    title: 'FinançasAI',
     description: 'Site pessoal e portfolio desenvolvido com Next.js e TypeScript, apresentando projetos e experiências profissionais.',
     fullDescription: `
       Meu portfolio pessoal foi desenvolvido com as mais modernas tecnologias web, focando em performance, 
@@ -50,13 +50,13 @@ Este projeto demonstra não apenas o domínio técnico em Java e Spring, mas tam
       • SEO otimizado
       • Performance otimizada com Next.js
     `,
-    image: '/projects/portfolio.png',
+    image: '/projects/financeiroai/financeiroai.png',
     technologies: ['Next.js', 'TypeScript', 'React', 'CSS Modules'],
     liveUrl: 'https://thyagod.dev',
     github: 'https://github.com/ThyagoMartins0/portfolio',
     screenshots: [
       {
-        url: '/projects/portfolio/screen1.png',
+        url: '/projects/financeiroai/financeiroai.png',
         caption: 'Página inicial'
       },
       {
@@ -69,9 +69,9 @@ Este projeto demonstra não apenas o domínio técnico em Java e Spring, mas tam
       }
     ]
   },
-  'novo-projeto': {
-    title: 'Novo Projeto',
-    description: 'Descrição do seu novo projeto aqui.',
+  'clausulai': {
+    title: 'ClausulAI',
+    description: 'ClausulAI é uma plataforma de análise de cláusulas contratuais.',
     fullDescription: `
       Descrição detalhada do seu novo projeto. Esta é uma descrição mais completa que pode
       incluir múltiplos parágrafos e explicar em detalhes o que o projeto faz.
@@ -86,7 +86,79 @@ Este projeto demonstra não apenas o domínio técnico em Java e Spring, mas tam
       Você pode incluir mais informações sobre o processo de desenvolvimento,
       desafios enfrentados, soluções implementadas e resultados alcançados.
     `,
-    image: '/projects/novo-projeto/cover.png',
+    image: '/projects/clausulai/capa.png',
+    technologies: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3'],
+    liveUrl: 'https://seu-projeto.com',
+    github: 'https://github.com/ThyagoMartins0/novo-projeto',
+    screenshots: [
+      {
+        url: '/projects/novo-projeto/screen1.png',
+        caption: 'Descrição da primeira screenshot'
+      },
+      {
+        url: '/projects/novo-projeto/screen2.png',
+        caption: 'Descrição da segunda screenshot'
+      },
+      {
+        url: '/projects/novo-projeto/screen3.png',
+        caption: 'Descrição da terceira screenshot'
+      }
+    ]
+  },
+  'pomodoro': {
+    title: 'ClausulAI',
+    description: 'ClausulAI é uma plataforma de análise de cláusulas contratuais.',
+    fullDescription: `
+      Descrição detalhada do seu novo projeto. Esta é uma descrição mais completa que pode
+      incluir múltiplos parágrafos e explicar em detalhes o que o projeto faz.
+
+      Principais características:
+      • Característica 1
+      • Característica 2
+      • Característica 3
+      • Característica 4
+      • Característica 5
+
+      Você pode incluir mais informações sobre o processo de desenvolvimento,
+      desafios enfrentados, soluções implementadas e resultados alcançados.
+    `,
+    image: '/projects/pomodoro/pomodoro.png',
+    technologies: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3'],
+    liveUrl: 'https://seu-projeto.com',
+    github: 'https://github.com/ThyagoMartins0/novo-projeto',
+    screenshots: [
+      {
+        url: '/projects/novo-projeto/screen1.png',
+        caption: 'Descrição da primeira screenshot'
+      },
+      {
+        url: '/projects/novo-projeto/screen2.png',
+        caption: 'Descrição da segunda screenshot'
+      },
+      {
+        url: '/projects/novo-projeto/screen3.png',
+        caption: 'Descrição da terceira screenshot'
+      }
+    ]
+  },
+  'py_faces_detector': {
+    title: 'ClausulAI',
+    description: 'ClausulAI é uma plataforma de análise de cláusulas contratuais.',
+    fullDescription: `
+      Descrição detalhada do seu novo projeto. Esta é uma descrição mais completa que pode
+      incluir múltiplos parágrafos e explicar em detalhes o que o projeto faz.
+
+      Principais características:
+      • Característica 1
+      • Característica 2
+      • Característica 3
+      • Característica 4
+      • Característica 5
+
+      Você pode incluir mais informações sobre o processo de desenvolvimento,
+      desafios enfrentados, soluções implementadas e resultados alcançados.
+    `,
+    image: '/projects/py_faces_detector/banner.png',
     technologies: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3'],
     liveUrl: 'https://seu-projeto.com',
     github: 'https://github.com/ThyagoMartins0/novo-projeto',
