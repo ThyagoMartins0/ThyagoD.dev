@@ -41,7 +41,7 @@ export default function GammingInnovatorsPage() {
     {
       key: 'project4',
       technologies: ["React", "Next.js", "TypeScript", "Jest", "Laravel", "MySQL", "Docker", "Kafka", "Postman"],
-       
+      
     }
   ];
 
@@ -115,7 +115,7 @@ export default function GammingInnovatorsPage() {
                     <div className={styles.projectTitle}>
                       <h3>{projectTranslations.title}</h3>
                       <span className={styles.role}>{projectTranslations.role}</span>
-                      {project.period && <div className={styles.projectPeriod}>{project.period}</div>}
+                       
                     </div>
                   </div>
 
