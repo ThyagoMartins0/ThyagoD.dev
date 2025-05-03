@@ -57,10 +57,7 @@ export default function MutantPage() {
               <h3>Cargo</h3>
               <p>Software Engineer</p>
             </div>
-            <div className={styles.detailItem}>
-              <h3>Período</h3>
-              <p>2024 - Atual</p>
-            </div>
+           
             <div className={styles.detailItem}>
               <h3>Localização</h3>
               <p>São Paulo, SP - (Home Office)</p>
@@ -110,18 +107,8 @@ Além de sua capacidade técnica, Thyago se destaca pela proatividade e dedicaç
                   height={300}
                   className={styles.galleryImage}
                 />
-                <div className={styles.playOverlay}>
-                  <svg 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24" 
-                    fill="none"
-                  >
-                    <path 
-                      d="M8 5v14l11-7L8 5z" 
-                      fill="currentColor"
-                    />
-                  </svg>
+                <div className={styles.saibaMaisOverlay}> 
+                  <span className={styles.saibaMaisText}>Saiba Mais</span>
                 </div>
               </div>
             ))}

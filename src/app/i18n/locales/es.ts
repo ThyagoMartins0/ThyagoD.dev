@@ -228,6 +228,67 @@ export const es: Translation = {
           school: 'Escuela'
         }
       }
+    },
+    gamming: {
+      about: {
+        title: "Sobre la Empresa",
+        description: "Descripción para Gaming Innovators...",
+        role: "Cargo",
+        location: "Ubicación"
+      },
+      projects: {
+        title: "Proyectos",
+        responsibilities: "Responsabilidades",
+        highlights: "Puntos Destacados",
+        technologies: "Tecnologías",
+        project1: {
+          title: "Título Proyecto Gamming 1",
+          description: "Descripción Proyecto Gamming 1...",
+          role: "Rol Proyecto Gamming 1",
+          responsibilities: [
+            "Responsabilidad A",
+            "Responsabilidad B"
+          ],
+          highlights: [
+            "Destacado 1",
+            "Destacado 2"
+          ]
+        },
+        project2: {
+          title: "Título Proyecto Gamming 2",
+          description: "Descripción Proyecto Gamming 2...",
+          role: "Rol Proyecto Gamming 2",
+          responsibilities: [
+            "Responsabilidad C",
+            "Responsabilidad D"
+          ],
+          highlights: [
+            "Destacado 3",
+            "Destacado 4"
+          ]
+        },
+        project3: {
+          title: "Título Proyecto Gamming 3",
+          description: "Descripción Proyecto Gamming 3...",
+          role: "Rol Proyecto Gamming 3",
+          responsibilities: [
+            "Responsabilidad E",
+            "Responsabilidad F"
+          ],
+          highlights: [
+            "Destacado 5",
+            "Destacado 6"
+          ]
+        }
+      },
+      gallery: {
+        title: "Galería",
+        images: {
+          team: "Foto del Equipo",
+          workspace: "Foto del Espacio de Trabajo",
+          event: "Foto del Evento de la Empresa"
+        }
+      }
     }
   },
   gallery: {
@@ -241,5 +302,68 @@ export const es: Translation = {
     readTime: 'min',
     readMore: 'Leer Más',
   },
-  languageSelector: 'Seleccionar idioma'
-}; 
+  languageSelector: 'Seleccionar idioma',
+  gamming: {
+    about: {
+      title: "Sobre la Empresa",
+      description: "Descripción para Gaming Innovators...",
+      role: "Cargo",
+      location: "Ubicación"
+    },
+    projects: {
+      title: "Proyectos",
+      responsibilities: "Responsabilidades",
+      highlights: "Puntos Destacados",
+      technologies: "Tecnologías",
+      project1: {
+        title: "Título Proyecto Gamming 1",
+        description: "Descripción Proyecto Gamming 1...",
+        role: "Rol Proyecto Gamming 1",
+        responsibilities: [
+          "Responsabilidad A",
+          "Responsabilidad B"
+        ],
+        highlights: [
+          "Destacado 1",
+          "Destacado 2"
+        ]
+      },
+      project2: {
+        title: "Título Proyecto Gamming 2",
+        description: "Descripción Proyecto Gamming 2...",
+        role: "Rol Proyecto Gamming 2",
+        responsibilities: [
+          "Responsabilidad C",
+          "Responsabilidad D"
+        ],
+        highlights: [
+          "Destacado 3",
+          "Destacado 4"
+        ]
+      },
+      project3: {
+        title: "Título Proyecto Gamming 3",
+        description: "Descripción Proyecto Gamming 3...",
+        role: "Rol Proyecto Gamming 3",
+        responsibilities: [
+          "Responsabilidad E",
+          "Responsabilidad F"
+        ],
+        highlights: [
+          "Destacado 5",
+          "Destacado 6"
+        ]
+      }
+    },
+    gallery: {
+      title: "Galería",
+      images: {
+        team: "Foto del Equipo",
+        workspace: "Foto del Espacio de Trabajo",
+        event: "Foto del Evento de la Empresa"
+      }
+    }
+  }
+};
+
+export default es; 

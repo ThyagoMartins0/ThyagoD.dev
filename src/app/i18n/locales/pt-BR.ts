@@ -118,7 +118,7 @@ export const ptBR: Translation = {
         images: {
           workspace: 'Espaço de trabalho',
           team: 'Time da empresa',
-          school: 'Escola'
+          school: 'Evento da empresa'
         }
       }
     },
@@ -228,6 +228,80 @@ export const ptBR: Translation = {
           workspace: 'Espaço de trabalho',
           team: 'Time da empresa',
           school: 'Escola'
+        }
+      }
+    },
+    gamming: {
+      about: {
+        title: "Desenvolvedora de jogos online ",
+        description: "Desenvolvimento de jogos online para a empresa Gamming Innovators, utilizando as tecnologias mais atuais e inovadoras do mercado.",
+        role: "Cargo",
+        location: "Localização"
+      },
+      projects: {
+        title: "Projetos",
+        responsibilities: "Responsabilidades",
+        highlights: "Destaques",
+        technologies: "Tecnologias",
+        project1: {
+          title: "Bingo Game",
+          description: "Jogo de bingo, projeto com clientes internos da empresa Gamming Innovators  ",
+          role: "Software Developer (Fullstack)",
+          responsibilities: [
+            "Responsabilidade A",
+            "Responsabilidade B"
+          ],
+          highlights: [
+            "Destaque 1",
+            "Destaque 2"
+          ]
+        },
+        project2: {
+          title: "Cassino Online ",
+          description: "Descrição Projeto Gamming 2...",
+          role: "Cargo Projeto Gamming 2",
+          responsibilities: [
+            "Responsabilidade C",
+            "Responsabilidade D"
+          ],
+          highlights: [
+            "Destaque 3",
+            "Destaque 4"
+          ]
+        },
+        project4: {
+          title: "Admin Services ",
+          description: "Descrição Projeto Gamming 2...",
+          role: "Cargo Projeto Gamming 2",
+          responsibilities: [
+            "Responsabilidade C",
+            "Responsabilidade D"
+          ],
+          highlights: [
+            "Destaque 3",
+            "Destaque 4"
+          ]
+        },
+        project3: {
+          title: "Devops",
+          description: "Criação de pipeline e upload de imagens para o container do cassino online, gerenciamento de servidores e banco de dados",
+          role: "Software Developer (Devops)",
+          responsibilities: [
+            "Responsabilidade E",
+            "Responsabilidade F"
+          ],
+          highlights: [
+            "Destaque 5",
+            "Destaque 6"
+          ]
+        },
+      },
+      gallery: {
+        title: "Galeria",
+        images: {
+          team: "Foto do Time",
+          workspace: "Foto do Espaço de Trabalho",
+          event: "Foto do Evento da Empresa"
         }
       }
     }

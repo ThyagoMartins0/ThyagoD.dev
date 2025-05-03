@@ -228,6 +228,67 @@ export const en: Translation = {
           school: "School"
         }
       }
+    },
+    gamming: {
+      about: {
+        title: "About the Company",
+        description: "Description for Gaming Innovators...",
+        role: "Role",
+        location: "Location"
+      },
+      projects: {
+        title: "Projects",
+        responsibilities: "Responsibilities",
+        highlights: "Highlights",
+        technologies: "Technologies",
+        project1: {
+          title: "Gamming Project 1 Title",
+          description: "Gamming Project 1 Description...",
+          role: "Gamming Project 1 Role",
+          responsibilities: [
+            "Responsibility A",
+            "Responsibility B"
+          ],
+          highlights: [
+            "Highlight 1",
+            "Highlight 2"
+          ]
+        },
+        project2: {
+          title: "Gamming Project 2 Title",
+          description: "Gamming Project 2 Description...",
+          role: "Gamming Project 2 Role",
+          responsibilities: [
+            "Responsibility C",
+            "Responsibility D"
+          ],
+          highlights: [
+            "Highlight 3",
+            "Highlight 4"
+          ]
+        },
+        project3: {
+          title: "Gamming Project 3 Title",
+          description: "Gamming Project 3 Description...",
+          role: "Gamming Project 3 Role",
+          responsibilities: [
+            "Responsibility E",
+            "Responsibility F"
+          ],
+          highlights: [
+            "Highlight 5",
+            "Highlight 6"
+          ]
+        }
+      },
+      gallery: {
+        title: "Gallery",
+        images: {
+          team: "Team Photo",
+          workspace: "Workspace Photo",
+          event: "Company Event Photo"
+        }
+      }
     }
   },
   gallery: {
@@ -242,4 +303,6 @@ export const en: Translation = {
     readMore: "Read More"
   },
   languageSelector: "Select language"
-}; 
+};
+
+export default en; 

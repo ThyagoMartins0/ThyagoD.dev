@@ -7,6 +7,7 @@ import CodernexCard from './CompanyView/CodernexCard'
 import DevsFreeCard from './CompanyView/CasantosCard'
 import CasantosCard from './CompanyView/DevsFreeCard'
 import GelogCard from './CompanyView/GelogCard'
+import GammingInnovatorsCard from './CompanyView/gamming_innovatorsCard'
 import { useLanguage } from '@/app/i18n/LanguageContext'
 
 export default function CompanyGrid() {
@@ -18,11 +19,12 @@ export default function CompanyGrid() {
       <p className={styles.description}>{t.companies.description}</p>
       <div className={styles.grid}>
         <MutantCard />
-        <NinetyNineCard />
+        <GammingInnovatorsCard />
         <CodernexCard />
-        <DevsFreeCard />
-        <GelogCard />
+        <NinetyNineCard />
         <CasantosCard />
+        <GelogCard />
+        <DevsFreeCard />
       </div>
     </section>
   )

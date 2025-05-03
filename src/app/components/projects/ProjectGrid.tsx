@@ -25,7 +25,7 @@ const PROJECTS = [
     slug: 'clausulai'
   },
   {
-    title: 'Py Face Detector',
+    title: 'Face Detector',
     description: 'Descrição do seu novo projeto aqui.',
     image:  '/projects/py_faces_detector/py_faces_detector.png',
     technologies: ['React', 'Next.js', 'CSS'],

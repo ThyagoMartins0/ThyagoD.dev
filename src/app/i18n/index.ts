@@ -141,6 +141,49 @@ export type Translation = {
         };
       };
     };
+    gamming: {
+      about: {
+        title: string;
+        description: string;
+        role: string;
+        location: string;
+      };
+      projects: {
+        title: string;
+        responsibilities: string;
+        highlights: string;
+        technologies: string;
+        project1: {
+          title: string;
+          description: string;
+          role: string;
+          responsibilities: readonly string[];
+          highlights: readonly string[];
+        };
+        project2: {
+          title: string;
+          description: string;
+          role: string;
+          responsibilities: readonly string[];
+          highlights: readonly string[];
+        };
+        project3: {
+          title: string;
+          description: string;
+          role: string;
+          responsibilities: readonly string[];
+          highlights: readonly string[];
+        };
+      };
+      gallery: {
+        title: string;
+        images: {
+          team: string;
+          workspace: string;
+          event: string;
+        };
+      };
+    };
   };
   gallery: {
     title: string;
