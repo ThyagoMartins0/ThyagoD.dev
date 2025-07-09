@@ -10,13 +10,13 @@ import { useLanguage } from '@/app/i18n/LanguageContext';
 const RESEARCH_POSTS = [
   {
     id: 1,
-    title: 'Explorando os Benefícios do TypeScript no Desenvolvimento React',
-    excerpt: 'Uma análise profunda sobre como o TypeScript melhora a qualidade do código e a experiência de desenvolvimento em projetos React.',
-    date: '2024-03-15',
-    readTime: '5',
-    image: '/research/typescript-react.jpg',
-    tags: ['TypeScript', 'React', 'Desenvolvimento Web'],
-    slug: 'typescript-react-benefits'
+    title: 'Qual é melhor ? PNPm ou NPm',
+    excerpt: 'Um estudo sobre a melhor forma de gerenciar as dependências de um projeto, com base em testes de performance e uso de memória.',
+    date: '10/07/2025',
+    readTime: '10',
+    image: '/tech/pnpm.png',
+    tags: ['pnpm', 'npm', 'yarn', 'desenvolvimento web'],
+    slug: 'pnpm-vs-npm-vs-yarn'
   },
   {
     id: 2,

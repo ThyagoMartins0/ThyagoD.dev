@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
 import Header from '../../components/header/Header';
 import styles from './page.module.css';
 
@@ -27,10 +28,10 @@ interface ResearchPost {
 
 // Dados detalhados dos posts (depois podemos mover para um arquivo separado)
 const RESEARCH_DETAILS: Record<string, ResearchPost> = {
-  'typescript-react-benefits': {
-    title: 'Explorando os Benefícios do TypeScript no Desenvolvimento React',
-    date: '2024-03-15',
-    readTime: '5 min',
+  'pnpm-vs-npm-vs-yarn': {
+    title: 'Qual é melhor ? PNPm ou NPm',
+    date: '10/07/2025',
+    readTime: '10 min',
     image: '/research/typescript-react.jpg',
     video: {
       url: 'https://www.youtube.com/embed/your-video-id',
@@ -42,81 +43,51 @@ const RESEARCH_DETAILS: Record<string, ResearchPost> = {
         name: 'Código Fonte do Projeto',
         file: '/downloads/typescript-react-examples.zip',
         size: '2.3 MB'
-      },
-      {
-        name: 'Slides da Apresentação',
-        file: '/downloads/typescript-react-slides.pdf',
-        size: '1.1 MB'
       }
     ],
     tags: ['TypeScript', 'React', 'Desenvolvimento Web'],
     content: `
-      O TypeScript tem se tornado cada vez mais popular no desenvolvimento React, e por boas razões. 
-      Neste artigo, vamos explorar em detalhes como o TypeScript melhora a qualidade do código e a experiência de desenvolvimento.
+      # Qual é melhor? PNPM ou NPM?
 
-      ## Por que usar TypeScript com React?
+      ## O Problema da Gestão de Dependências na Era Moderna
 
-      O TypeScript oferece várias vantagens significativas quando usado com React:
+      Com o avanço da tecnologia atual, onde espaço de armazenamento e memória RAM se tornaram recursos abundantes (basta comprar mais), o gerenciamento eficiente desses recursos perdeu prioridade. Isso resultou em uma geração de desenvolvedores que não se preocupam mais com:
 
-      1. **Detecção de Erros em Tempo de Compilação**
-      - Catch de erros antes mesmo de executar o código
-      - Melhor experiência de debugging
-      - Redução de erros em produção
+      - **Tamanho dos projetos**: Quanto espaço um projeto realmente ocupa
+      - **Comandos otimizados**: Qual é a melhor abordagem dependendo do sistema
+      - **Gestão de dependências**: O que realmente está sendo instalado no node_modules
 
-      2. **Melhor Intellisense e Autocompleção**
-      - Sugestões mais precisas no editor
-      - Documentação inline
-      - Navegação mais fácil pelo código
+      Tornou-se hábito simplesmente executar npm install sem considerar o bom gerenciamento de espaço ou mesmo entender o que está sendo instalado.
 
-      3. **Props Typing**
-      - Definição clara da interface dos componentes
-      - Validação automática de props
-      - Melhor manutenibilidade
+      ## Por que usar PNPM ao invés de NPM?
 
-      ## Exemplos Práticos
+      Quando criamos um novo projeto, somos ensinados a simplesmente:
+      1. Executar npm install
+      2. Começar a codar
 
-      Vamos ver alguns exemplos de como o TypeScript melhora o desenvolvimento React:
+      Porém, raramente nos questionamos:
+      - **Realmente precisamos** de todas essas dependências?
+      - **Quais dependências** vamos realmente utilizar?
+      - **Seria possível** deixar tudo global e totalmente reutilizável?
 
-      \`\`\`typescript
-      interface UserProps {
-        name: string;
-        age: number;
-        email: string;
-      }
+      ### Exemplo Prático
 
-      const UserProfile: React.FC<UserProps> = ({ name, age, email }) => {
-        return (
-          <div>
-            <h2>{name}</h2>
-            <p>Age: {age}</p>
-            <p>Email: {email}</p>
-          </div>
-        );
-      };
-      \`\`\`
+      Para demonstrar a diferença, criei um CRUD simples utilizando:
+      - **Frontend**: React (uma das bibliotecas mais populares)
+      - **Backend**: Express
 
-      ## Melhores Práticas
+      ### Contexto do Experimento
 
-      1. **Use Interfaces para Props**
-      - Melhor legibilidade
-      - Reutilização de tipos
-      - Documentação clara
+      Durante o desenvolvimento de um projeto recente, solicitei ajuda ao ChatGPT, que recomendou comparar o uso de npm install vs pnpm install. Esta análise surgiu dessa recomendação.
 
-      2. **Evite 'any'**
-      - Mantenha a type safety
-      - Use tipos genéricos quando necessário
-      - Defina tipos customizados
+      ### O que sabemos sobre NPM
 
-      3. **Utilize Generics**
-      - Para componentes reutilizáveis
-      - Para funções utilitárias
-      - Para hooks customizados
+      O npm install é um comando do npm (Node Package Manager) usado para instalar dependências (bibliotecas, pacotes) em projetos Node.js. Entretanto, mesmo em um projeto CRUD simples em React, o peso pode ser significativo.
 
-      ## Conclusão
+      ### Fontes de Pesquisa
 
-      O TypeScript é uma ferramenta poderosa que, quando usada corretamente com React, pode 
-      significativamente melhorar a qualidade do código e a experiência de desenvolvimento.
-      A curva de aprendizado inicial vale a pena pelos benefícios a longo prazo.
+      - [PNPM Motivation](https://pnpm.io/pt/motivation)
+      - [PNPM Benchmarks](https://pnpm.io/pt/benchmarks)
     `
   },
   'nextjs-performance-optimization': {
@@ -349,20 +320,9 @@ export default async function ResearchPage({ params }: { params: Promise<{ slug:
             </div>
           </div>
 
-          <div 
-            className={styles.markdown}
-            dangerouslySetInnerHTML={{ __html: post.content.split('\\n').map(line => {
-              if (line.startsWith('##')) {
-                return `<h2>${line.replace('##', '').trim()}</h2>`;
-              }
-              if (line.startsWith('```')) {
-                return line.includes('```typescript') || line.includes('```jsx')
-                  ? '<pre><code class="language-typescript">'
-                  : line.includes('```') ? '</code></pre>' : line;
-              }
-              return line ? `<p>${line.trim()}</p>` : '';
-            }).join('') }}
-          />
+          <div className={styles.markdown}>
+            <ReactMarkdown>{post.content}</ReactMarkdown>
+          </div>
         </div>
       </article>
     </main>
