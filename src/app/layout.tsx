@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { AppProviders } from "@/components/providers/AppProviders";
 import "@/styles/globals.css";
 
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en" data-theme="dark" data-lang="en" suppressHydrationWarning>
       <body className={plusJakarta.className}>
         <AppProviders>{children}</AppProviders>
+        <Analytics />
       </body>
     </html>
   );
